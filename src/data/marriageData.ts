@@ -29,7 +29,7 @@ export const milestoneEvents: MilestoneEvent[] = [
     subTitle: "Rishta Meeting at Bride's House in the Presence of Whole Family",
     date: '2026-05-06',
     displayDateBadge: '06.05.2026',
-    formattedDate: 'May 6, 2026 (Wednesday)',
+    formattedDate: 'May 6, 2026 (Wednesday • 4:30 PM)',
     location: "Bride's Family Residence",
     locationDetails: 'Living Room with 18 Family Elders, Fresh Marigolds & Porcelain Tea Service',
     coverImage: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=80',
@@ -41,8 +41,8 @@ export const milestoneEvents: MilestoneEvent[] = [
     narrative: {
       lead: 'Two worlds, two lineages, and two nervous hearts met under the affectionate eyes of 18 family elders.',
       paragraphs: [
-        'The clock struck 11:30 AM when Venketesh and his family arrived at the house. Outside, Venketesh secretly adjusted his collar thrice while his mother whispered, "Smile naturally, and remember to touch the elders\' feet first!"',
-        'Inside, Swetha was gently teased by her sisters as she arranged the cups on the tea tray. The living room was alive with vibrant conversation: uncles debating hometown roots and career milestones, and grandparents comparing planetary horoscopes.',
+        'The clock struck 4:30 PM when Venketesh and his family arrived at the house. Outside, Venketesh secretly adjusted his collar thrice while his mother whispered, "Smile naturally, and remember to touch the elders\' feet first!"',
+        'Inside, Swetha was gently teased by her brothers as she arranged the cups on the tea tray. The living room was alive with vibrant conversation: uncles debating hometown roots and career milestones, and grandparents comparing planetary horoscopes.',
         'And then came the legendary moment: Swetha walked into the room carrying the warm tea. Their eyes locked for a fleeting three seconds—both blushing, their nervousness instantly melting into quiet curiosity.',
         'With a knowing smile, the elders announced: "Why don\'t both of you go sit on the garden verandah and talk comfortably for a while?" Those fifteen minutes changed everything. They laughed about how formal everyone was, discovered their shared playlist of retro melodies, and walked back in with eyes that said a resolute "YES".'
       ],

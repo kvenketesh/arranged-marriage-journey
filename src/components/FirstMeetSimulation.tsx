@@ -24,7 +24,7 @@ export const FirstMeetSimulation: React.FC<FirstMeetSimulationProps> = ({
   const dialoguePhases = [
     {
       title: 'Scene 1: The Living Room Tea Tray Arrival',
-      subtitle: 'May 6, 2026 • 11:45 AM • In front of 18 family elders',
+      subtitle: 'May 6, 2026 • 4:45 PM • In front of 18 family elders',
       context:
         `${groomFirst} sat upright on the sofa with both hands on his knees, surrounded by his parents, uncle, and grandmother. The door opened and ${brideFirst} stepped into the living room, holding a silver tray with steaming cardamom tea and kaju katlis.`,
       question: `As ${brideFirst} handed ${groomFirst} his cup of tea, their eyes met for the very first time. What was ${groomFirst}'s reaction?`,
@@ -51,7 +51,7 @@ export const FirstMeetSimulation: React.FC<FirstMeetSimulationProps> = ({
     },
     {
       title: 'Scene 2: The 15-Minute Balcony Escapade',
-      subtitle: 'May 6, 2026 • 12:15 PM • Away from the elders\' watchful eyes',
+      subtitle: 'May 6, 2026 • 5:15 PM • Away from the elders\' watchful eyes',
       context:
         `The elders coughed politely and said: "Beta, why don't you both sit outside in the garden verandah and talk comfortably?" Once the door closed behind them, the heavy formal silence broke.`,
       question: `Who broke the ice on the balcony and how?`,
@@ -78,7 +78,7 @@ export const FirstMeetSimulation: React.FC<FirstMeetSimulationProps> = ({
     },
     {
       title: 'Scene 3: The Green Signal (हाँ!)',
-      subtitle: 'May 6, 2026 • 12:45 PM • The Final Verdict',
+      subtitle: 'May 6, 2026 • 5:45 PM • The Final Verdict',
       context:
         `Fifteen minutes flew by like three seconds. When they walked back into the living room, the entire family was looking at their faces, waiting for a signal. Both of them couldn't hide their genuine smiles.`,
       question: `What sealed the deal before everyone said yes?`,
