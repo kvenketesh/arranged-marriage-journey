@@ -1,10 +1,10 @@
 import { CoupleProfile, MilestoneEvent, FamilyMember, Blessing, StoryChoice } from '../types';
 
 export const initialCoupleProfile: CoupleProfile = {
-  brideName: 'Pooja Sharma',
-  groomName: 'Rohan Verma',
-  brideNickname: 'Gungun',
-  groomNickname: 'Kittu',
+  brideName: 'N SWETHA',
+  groomName: 'K VENKETESH',
+  brideNickname: 'Swetha',
+  groomNickname: 'Venketesh',
   bridePhoto: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80', // Traditional Indian Bride
   groomPhoto: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80', // Handsome Groom
   couplePhoto: 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=80', // Wedding couple smiling
@@ -41,13 +41,13 @@ export const milestoneEvents: MilestoneEvent[] = [
     narrative: {
       lead: 'Two worlds, two lineages, and two nervous hearts met under the affectionate eyes of 18 family elders.',
       paragraphs: [
-        'The clock struck 11:30 AM when Rohan and his family arrived at the house. Outside, Rohan secretly adjusted his collar thrice while his mother whispered, "Smile naturally, and remember to touch the elders\' feet first!"',
-        'Inside, Pooja was gently teased by her sisters as she arranged the cups on the tea tray. The living room was alive with vibrant conversation: uncles debating hometown roots and career milestones, and grandparents comparing planetary horoscopes.',
-        'And then came the legendary moment: Pooja walked into the room carrying the warm tea. Their eyes locked for a fleeting three seconds—both blushing, their nervousness instantly melting into quiet curiosity.',
+        'The clock struck 11:30 AM when Venketesh and his family arrived at the house. Outside, Venketesh secretly adjusted his collar thrice while his mother whispered, "Smile naturally, and remember to touch the elders\' feet first!"',
+        'Inside, Swetha was gently teased by her sisters as she arranged the cups on the tea tray. The living room was alive with vibrant conversation: uncles debating hometown roots and career milestones, and grandparents comparing planetary horoscopes.',
+        'And then came the legendary moment: Swetha walked into the room carrying the warm tea. Their eyes locked for a fleeting three seconds—both blushing, their nervousness instantly melting into quiet curiosity.',
         'With a knowing smile, the elders announced: "Why don\'t both of you go sit on the garden verandah and talk comfortably for a while?" Those fifteen minutes changed everything. They laughed about how formal everyone was, discovered their shared playlist of retro melodies, and walked back in with eyes that said a resolute "YES".'
       ],
       behindTheScenes:
-        'Pooja secretly admitted later that her hands were trembling so much while holding the tea cup that she thought the spoon would fall off! Meanwhile, Rohan was so captivated that he put three packets of sugar in his tea without realizing!'
+        'Swetha secretly admitted later that her hands were trembling so much while holding the tea cup that she thought the spoon would fall off! Meanwhile, Venketesh was so captivated that he put three packets of sugar in his tea without realizing!'
     },
     highlights: [
       'Warm welcome at the doorstep with Aarti & floral tika',
@@ -82,13 +82,13 @@ export const milestoneEvents: MilestoneEvent[] = [
         speaker: 'Dadi Ji (Groom\'s Grandmother)',
         relation: 'Eldest Matriarch',
         avatar: '👵🏽',
-        quote: 'As soon as Pooja stepped into the room with that gentle grace, I told Rohan\'s mother: "Look no further, our house has found its Laxmi."'
+        quote: 'As soon as Swetha stepped into the room with that gentle grace, I told Venketesh\'s mother: "Look no further, our house has found its Laxmi."'
       },
       {
-        speaker: 'Pooja\'s Father',
+        speaker: 'Swetha\'s Father',
         relation: 'Bride\'s Papa',
         avatar: '👨🏽‍🦳',
-        quote: 'Watching Rohan speak so respectfully to my mother and then see his eyes light up when he looked at my daughter gave me complete peace of mind.'
+        quote: 'Watching Venketesh speak so respectfully to my mother and then see his eyes light up when he looked at my daughter gave me complete peace of mind.'
       }
     ],
     gallery: [
@@ -129,12 +129,12 @@ export const milestoneEvents: MilestoneEvent[] = [
       lead: 'Under a canopy of fragrant tuberose and glittering chandeliers, two rings sealed a timeless promise.',
       paragraphs: [
         'By July 1st, two months after their first meeting, the initial awkwardness had blossomed into late-night phone calls and excited WhatsApp messages.',
-        'Rohan stood waiting in a bespoke ivory sherwani with gold zardozi embroidery. When Pooja made her grand entrance in a crimson and peach lehenga with handcrafted gotta patti work, surrounded by her brothers holding a floral chadar, the entire hall erupted in cheers.',
-        'As the pandit ji chanted the sacred shlokas, Rohan gently held Pooja\'s hand and slipped the solitaire diamond ring onto her finger. Pooja followed, sliding the platinum band onto his. The moment they raised their hands together, a burst of rose petals showered over them, set to the joyous tunes of live Shehnai and Dhol.',
-        'That evening ended with an impromptu dance performance by all the cousins, where Rohan pulled Pooja to the center of the dance floor for their first romantic waltz amidst glowing cold pyros.'
+        'Venketesh stood waiting in a bespoke ivory sherwani with gold zardozi embroidery. When Swetha made her grand entrance in a crimson and peach lehenga with handcrafted gotta patti work, surrounded by her brothers holding a floral chadar, the entire hall erupted in cheers.',
+        'As the pandit ji chanted the sacred shlokas, Venketesh gently held Swetha\'s hand and slipped the solitaire diamond ring onto her finger. Swetha followed, sliding the platinum band onto his. The moment they raised their hands together, a burst of rose petals showered over them, set to the joyous tunes of live Shehnai and Dhol.',
+        'That evening ended with an impromptu dance performance by all the cousins, where Venketesh pulled Swetha to the center of the dance floor for their first romantic waltz amidst glowing cold pyros.'
       ],
       behindTheScenes:
-        'Rohan spent three weeks hunting for the exact ring size without letting Pooja know, enlisting her best friend as a covert spy!'
+        'Venketesh spent three weeks hunting for the exact ring size without letting Swetha know, enlisting her best friend as a covert spy!'
     },
     highlights: [
       'Grand bridal entry under the Phoolon Ki Chadar (Floral Canopy)',
@@ -156,7 +156,7 @@ export const milestoneEvents: MilestoneEvent[] = [
     ],
     familyQuotes: [
       {
-        speaker: 'Rohan\'s Mother',
+        speaker: 'Venketesh\'s Mother',
         relation: 'Mother of the Groom',
         avatar: '🧕🏽',
         quote: 'My heart overflowed with tears of happiness when they placed the rings on each other\'s fingers. May God protect their bond from all evil eyes.'
@@ -194,12 +194,12 @@ export const milestoneEvents: MilestoneEvent[] = [
       lead: 'A courtyard bathed in sunburst yellow, fragrant fresh turmeric paste, and unrestrained laughter as relatives showered blessings.',
       paragraphs: [
         'On October 13, 2026, the courtyard was transformed into a sea of yellow silk sarees and kurtas. The sound of rhythmic pestle beats on the stone mortar echoed through the morning air as the aunts sang traditional Telugu mangala harathis.',
-        'Pooja sat gracefully on a wooden peeta, surrounded by brass diyas and baskets piled high with raw golden turmeric rhizomes. Her grandmother initiated the ritual by applying the fragrant paste on her feet, palms, and cheeks with a betel leaf.',
-        'Within minutes, the solemn blessing turned into playful celebrations! The cousins began smearing haldi on each other, splashing scented rose water, and teasing Pooja about how Rohan would react when he saw her golden radiance.',
-        'The ceremony concluded with the Mangala Snanam (sacred purification bath) with holy water infused with jasmine blossoms, leaving Pooja beaming with unmistakable bridal joy.'
+        'Swetha sat gracefully on a wooden peeta, surrounded by brass diyas and baskets piled high with raw golden turmeric rhizomes. Her grandmother initiated the ritual by applying the fragrant paste on her feet, palms, and cheeks with a betel leaf.',
+        'Within minutes, the solemn blessing turned into playful celebrations! The cousins began smearing haldi on each other, splashing scented rose water, and teasing Swetha about how Venketesh would react when he saw her golden radiance.',
+        'The ceremony concluded with the Mangala Snanam (sacred purification bath) with holy water infused with jasmine blossoms, leaving Swetha beaming with unmistakable bridal joy.'
       ],
       behindTheScenes:
-        'Pooja\'s little cousins playfully sneaked behind her with yellow water guns filled with turmeric rose-water, turning the backyard into a playful Holi battlefield!'
+        'Swetha\'s little cousins playfully sneaked behind her with yellow water guns filled with turmeric rose-water, turning the backyard into a playful Holi battlefield!'
     },
     highlights: [
       'Pounding of raw whole turmeric roots in decorated stone mortars (Pasupu Danchadam)',
@@ -234,13 +234,13 @@ export const milestoneEvents: MilestoneEvent[] = [
         speaker: 'Peddamma (Eldest Aunt)',
         relation: 'Maternal Aunt',
         avatar: '🧕🏽',
-        quote: 'As we pounded the turmeric roots today, I remembered Pooja as a little toddler. Today she looks like Goddess Lakshmi herself covered in sacred gold.'
+        quote: 'As we pounded the turmeric roots today, I remembered Swetha as a little toddler. Today she looks like Goddess Lakshmi herself covered in sacred gold.'
       },
       {
         speaker: 'Kavya (Best Friend)',
         relation: 'Maid of Honor',
         avatar: '👧🏽',
-        quote: 'We made sure not a single inch of her face was left without turmeric! Rohan is going to be completely spellbound!'
+        quote: 'We made sure not a single inch of her face was left without turmeric! Venketesh is going to be completely spellbound!'
       }
     ],
     gallery: [
@@ -278,13 +278,13 @@ export const milestoneEvents: MilestoneEvent[] = [
     culturalContext:
       'In Indian culture, the groom\'s first solo visit to the bride\'s house as the "Officially Engaged Son-in-law (Damad Ji / Alludu)" is a hilarious and heartwarming royal affair. The mother-in-law cooks a 10-course feast, while the cousins prepare mischievous pranks. But the real magic happens when the couple sneaks away for an intimate outdoor date.',
     narrative: {
-      lead: 'After being pampered like an emperor at her home, Rohan and Pooja escaped to the beach to create their most cherished memory.',
+      lead: 'After being pampered like an emperor at her home, Venketesh and Swetha escaped to the beach to create their most cherished memory.',
       paragraphs: [
-        'On the morning of October 21, 2026, Rohan arrived at Pooja\'s house. This time, there was no awkward tension—he was welcomed with a garland, traditional Aarti, and an irresistible feast of home-cooked delicacies personally prepared by Pooja\'s mother.',
-        'Every cousin took turns testing the new "Jiju", asking tricky questions and trying to win shagun points. But Pooja and Rohan kept exchanging playful smiles across the dining table, waiting for their planned afternoon escape.',
+        'On the morning of October 21, 2026, Venketesh arrived at Swetha\'s house. This time, there was no awkward tension—he was welcomed with a garland, traditional Aarti, and an irresistible feast of home-cooked delicacies personally prepared by Swetha\'s mother.',
+        'Every cousin took turns testing the new "Jiju", asking tricky questions and trying to win shagun points. But Swetha and Venketesh kept exchanging playful smiles across the dining table, waiting for their planned afternoon escape.',
         'By 4:30 PM, they managed to slip out into the pleasant October breeze and headed straight for the coastline. As they stepped onto the damp golden sand, they took off their footwear and felt the cool ocean water lap gently over their feet.',
         'They walked miles along the shoreline, hand in hand. They shared spicy roasted corn (bhutta) rubbed with lime and salt, chased incoming waves like carefree children, and sat together on a wooden pier as the orange sun dipped into the roaring ocean.',
-        'In that tranquil sea breeze, with salt in their hair and waves whispering at their feet, Rohan took Pooja\'s hand and said: "From that nervous living room tea in May to this endless sea today, I didn\'t just find a bride—I found my best friend."'
+        'In that tranquil sea breeze, with salt in their hair and waves whispering at their feet, Venketesh took Swetha\'s hand and said: "From that nervous living room tea in May to this endless sea today, I didn\'t just find a bride—I found my best friend."'
       ],
       behindTheScenes:
         'A rogue sea wave unexpectedly caught them while taking a selfie, soaking their jeans completely! Instead of getting annoyed, they burst out laughing and splashed water on each other!'
@@ -309,7 +309,7 @@ export const milestoneEvents: MilestoneEvent[] = [
     ],
     familyQuotes: [
       {
-        speaker: 'Pooja (The Bride)',
+        speaker: 'Swetha (The Bride)',
         relation: 'The Bride',
         avatar: '👰🏽',
         quote: 'That beach evening was pure magic. In the chaotic wedding prep, just holding his hand in silence while listening to the sea waves gave me the deepest sense of peace.'
@@ -352,12 +352,12 @@ export const milestoneEvents: MilestoneEvent[] = [
         'The home was now alive with non-stop nadaswaram melodies, relatives pouring in with luggage from trains and flights, and the aroma of filter coffee brewing in large brass vessels.'
       ],
       behindTheScenes:
-        'Pooja\'s uncle insisted on hoisting the pole personally, chanting slogans so loud that the whole street cheered and came over for morning laddoos!'
+        'Swetha\'s uncle insisted on hoisting the pole personally, chanting slogans so loud that the whole street cheered and came over for morning laddoos!'
     },
     highlights: [
       'Consecration of the sacred bamboo pole with turmeric, kumkum, and sacred yellow thread',
       'Tying of mango leaf festoons (Mavidakula Thoranam) to welcome divine energies',
-      'Ganesha Pooja and coconut breaking to ensure an obstacle-free wedding',
+      'Ganesha Swetha and coconut breaking to ensure an obstacle-free wedding',
       'Arrival of extended relatives from across the globe, filling the house with festive commotion'
     ],
     ritualsAndHospitality: [
@@ -414,15 +414,15 @@ export const milestoneEvents: MilestoneEvent[] = [
     culturalContext:
       'The sacred wedding (Kalyana Muhurtham / Lagna) is the eternal union of two souls. Key rituals include: Jeelakarra Bellam (placing cumin and jaggery on each other\'s heads at the exact auspicious moment, symbolizing that couple remains inseparable through sweet and bitter), Kanyadanam, Mangalasutra Dharana (tying the three sacred golden knots), Saptapadi (seven circumambulations around the holy fire), and Talambralu (joyfully pouring turmeric rice and pearls over each other).',
     narrative: {
-      lead: 'Nine months after that nervous cup of tea on May 6th, Rohan and Pooja became husband and wife under the blessings of fire and gods.',
+      lead: 'Nine months after that nervous cup of tea on May 6th, Venketesh and Swetha became husband and wife under the blessings of fire and gods.',
       paragraphs: [
-        'At the auspicious pre-dawn muhurtham on February 10, 2027, the grand hall reverberated with the resonant notes of the Shehnai and Nadaswaram. Rohan sat on the mandap in silk dhoti and angavastram, eagerly watching the entrance.',
-        'When the curtain (Aggi / Thera) was held between them, Pooja was carried in by her maternal uncles in a royal yellow and crimson Kanjeevaram silk saree with intricate temple gold borders.',
-        'At the precise stroke of the muhurtham, the curtain dropped. Rohan and Pooja placed the sacred Jeelakarra Bellam (cumin & jaggery) paste firmly on each other\'s heads, locking eyes in profound emotion. Next came the defining moment: Rohan tied the three knots of the golden Mangalsutra around Pooja\'s neck as hundreds of family members showered sacred yellow Akshatalu over them.',
-        'And then came everyone\'s favorite ritual: Talambralu! What started as a gentle shower of turmeric-tinted rice quickly turned into a delightful, competitive laughter match, with Rohan and Pooja playfully dumping bowls of pearls and flowers over each other\'s crowns to the roars and applause of the audience!'
+        'At the auspicious pre-dawn muhurtham on February 10, 2027, the grand hall reverberated with the resonant notes of the Shehnai and Nadaswaram. Venketesh sat on the mandap in silk dhoti and angavastram, eagerly watching the entrance.',
+        'When the curtain (Aggi / Thera) was held between them, Swetha was carried in by her maternal uncles in a royal yellow and crimson Kanjeevaram silk saree with intricate temple gold borders.',
+        'At the precise stroke of the muhurtham, the curtain dropped. Venketesh and Swetha placed the sacred Jeelakarra Bellam (cumin & jaggery) paste firmly on each other\'s heads, locking eyes in profound emotion. Next came the defining moment: Venketesh tied the three knots of the golden Mangalsutra around Swetha\'s neck as hundreds of family members showered sacred yellow Akshatalu over them.',
+        'And then came everyone\'s favorite ritual: Talambralu! What started as a gentle shower of turmeric-tinted rice quickly turned into a delightful, competitive laughter match, with Venketesh and Swetha playfully dumping bowls of pearls and flowers over each other\'s crowns to the roars and applause of the audience!'
       ],
       behindTheScenes:
-        'During Talambralu, Pooja\'s brother hoisted her on his shoulders so Rohan couldn\'t reach her head with the rice bowl! Rohan\'s friends immediately lifted Rohan even higher, sparking an unforgettable round of laughter!'
+        'During Talambralu, Swetha\'s brother hoisted her on his shoulders so Venketesh couldn\'t reach her head with the rice bowl! Venketesh\'s friends immediately lifted Venketesh even higher, sparking an unforgettable round of laughter!'
     },
     highlights: [
       'Jeelakarra Bellam: Placing the sacred cumin and jaggery paste on each other at the exact muhurtham',
@@ -454,16 +454,16 @@ export const milestoneEvents: MilestoneEvent[] = [
     ],
     familyQuotes: [
       {
-        speaker: 'Pooja\'s Father',
+        speaker: 'Swetha\'s Father',
         relation: 'Father of the Bride',
         avatar: '👨🏽‍🦳',
-        quote: 'Giving away my daughter\'s hand in Kanyadanam was the most emotional second of my life. Seeing Rohan\'s gentle, reassuring eyes gave me eternal peace.'
+        quote: 'Giving away my daughter\'s hand in Kanyadanam was the most emotional second of my life. Seeing Venketesh\'s gentle, reassuring eyes gave me eternal peace.'
       },
       {
-        speaker: 'Rohan (The Groom)',
+        speaker: 'Venketesh (The Groom)',
         relation: 'The Groom',
         avatar: '🤵🏽',
-        quote: 'When that screen dropped at the muhurtham and I saw Pooja smiling, every bit of nervousness evaporated. I am the luckiest man alive.'
+        quote: 'When that screen dropped at the muhurtham and I saw Swetha smiling, every bit of nervousness evaporated. I am the luckiest man alive.'
       }
     ],
     gallery: [
@@ -504,12 +504,12 @@ export const milestoneEvents: MilestoneEvent[] = [
       lead: 'On a romantic Valentine’s evening, the couple made their first grand social entrance as Mr. & Mrs. amidst glittering lights and champagne toasts.',
       paragraphs: [
         'On Sunday evening, February 14, 2027, the doors of the Crystal Ballroom opened to welcome over a thousand guests. The atmosphere was sparkling: fairy lights draped from ancient banyan trees, live violinists playing soulful harmonies, and a red carpet leading to the regal couple stage.',
-        'Rohan looked sharp and debonair in a custom midnight-blue velvet tuxedo, while Pooja stunned in an emerald green and gold designer evening gown with diamond chandelier earrings.',
+        'Venketesh looked sharp and debonair in a custom midnight-blue velvet tuxedo, while Swetha stunned in an emerald green and gold designer evening gown with diamond chandelier earrings.',
         'They walked down the ramp holding hands, radiating the relaxed confidence of two best friends who were now married. Together, they cut an exquisite 3-tier red velvet wedding cake to a standing ovation and sparkling cold pyrotechnics.',
         'The evening flowed seamlessly into congratulations, endless group selfies with friends from school and university, heartfelt toasts by both best men, and a lavish global banquet with live pasta, chaat, and dessert stations.'
       ],
       behindTheScenes:
-        'Rohan secretly arranged for the live band to play the retro song they had bonded over during their very first balcony meeting on May 6th, surprising Pooja and making her tear up on stage!'
+        'Venketesh secretly arranged for the live band to play the retro song they had bonded over during their very first balcony meeting on May 6th, surprising Swetha and making her tear up on stage!'
     },
     highlights: [
       'Valentine\'s Day romantic gala theme with red carpet and live violin orchestra',
@@ -530,7 +530,7 @@ export const milestoneEvents: MilestoneEvent[] = [
       },
       {
         title: 'The Retro Song Surprise',
-        description: 'Rohan took the microphone and dedicated their May 6th balcony song to Pooja in front of all 1,000 guests.',
+        description: 'Venketesh took the microphone and dedicated their May 6th balcony song to Swetha in front of all 1,000 guests.',
         category: 'emotion'
       }
     ],
@@ -565,11 +565,11 @@ export const familyMembers: FamilyMember[] = [
   },
   {
     id: 'f-2',
-    name: 'Papa Ji (Mr. Sharma)',
+    name: 'Papa Ji (Bride\'s Father)',
     relation: "Bride's Father",
     side: 'bride',
     avatar: '👨🏽‍🦳',
-    funFact: 'Looked tough on the outside, but melted when Rohan bowed to take his blessings.',
+    funFact: 'Looked tough on the outside, but melted when Venketesh bowed to take his blessings.',
     firstMeetReaction: 'Secretly told his wife in the kitchen: "The boy has golden values. Yes from my side."'
   },
   {
@@ -578,7 +578,7 @@ export const familyMembers: FamilyMember[] = [
     relation: 'Paternal Aunt',
     side: 'bride',
     avatar: '🧕🏽',
-    funFact: 'Tested Rohan by asking if he prefers Assam orthodox or spiced Kadak chai.',
+    funFact: 'Tested Venketesh by asking if he prefers Assam orthodox or spiced Kadak chai.',
     firstMeetReaction: 'Loved how politely he complimented her homemade gujiya!'
   },
   {
@@ -604,15 +604,15 @@ export const defaultBlessings: Blessing[] = [
   {
     id: 'b-2',
     author: 'Neha (College Bestie)',
-    relation: "Pooja's Friend",
-    message: 'I still remember Pooja calling me right after the May 6 verandah talk blushing like crazy! Can not wait for the February 10 Kalyanam and 14th Valentine Reception! 🎉💍',
+    relation: "Swetha's Friend",
+    message: 'I still remember Swetha calling me right after the May 6 verandah talk blushing like crazy! Can not wait for the February 10 Kalyanam and 14th Valentine Reception! 🎉💍',
     timestamp: '5 hours ago',
     symbol: '💖'
   },
   {
     id: 'b-3',
     author: 'Vikram',
-    relation: "Rohan's Childhood Bro",
+    relation: "Venketesh's Childhood Bro",
     message: 'Bro, you went from being super nervous on May 6 to glowing on the beach in Oct and ready for marriage in Feb! Love you both!',
     timestamp: '1 day ago',
     symbol: '🌊'

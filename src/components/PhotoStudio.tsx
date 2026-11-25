@@ -3,6 +3,7 @@ import { Camera, Upload, X, Check, RefreshCw, Sparkles, User, Heart, Image as Im
 import { CoupleProfile } from '../types';
 import { initialCoupleProfile } from '../data/marriageData';
 import { sound } from '../utils/audio';
+import { PROFILE_STORAGE_KEY } from '../utils/names';
 import confetti from 'canvas-confetti';
 
 interface PhotoStudioProps {
@@ -40,7 +41,7 @@ export const PhotoStudio: React.FC<PhotoStudioProps> = ({
   const handleSave = (e: React.FormEvent) => {
     e.preventDefault();
     onUpdateProfile(formData);
-    localStorage.setItem('indian_marriage_couple_profile', JSON.stringify(formData));
+    localStorage.setItem(PROFILE_STORAGE_KEY, JSON.stringify(formData));
     setSavedSuccess(true);
     sound.playRingChime();
     confetti({
@@ -59,7 +60,7 @@ export const PhotoStudio: React.FC<PhotoStudioProps> = ({
     if (window.confirm('Reset all photos and names to default curated Indian wedding photography?')) {
       setFormData(initialCoupleProfile);
       onUpdateProfile(initialCoupleProfile);
-      localStorage.removeItem('indian_marriage_couple_profile');
+      localStorage.removeItem(PROFILE_STORAGE_KEY);
       sound.playTeaClink();
     }
   };

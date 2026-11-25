@@ -11,10 +11,11 @@ import { MusicPlayerBar } from './components/MusicPlayerBar';
 import { initialCoupleProfile, milestoneEvents } from './data/marriageData';
 import { CoupleProfile } from './types';
 import { sound } from './utils/audio';
+import { PROFILE_STORAGE_KEY } from './utils/names';
 
 export function App() {
   const [profile, setProfile] = useState<CoupleProfile>(() => {
-    const saved = localStorage.getItem('indian_marriage_couple_profile');
+    const saved = localStorage.getItem(PROFILE_STORAGE_KEY);
     return saved ? JSON.parse(saved) : initialCoupleProfile;
   });
 

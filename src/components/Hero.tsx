@@ -2,6 +2,7 @@ import React from 'react';
 import { Calendar, MapPin, Sparkles, Heart, Clock, ArrowRight, Play } from 'lucide-react';
 import { CoupleProfile } from '../types';
 import { sound, OccasionTrackId } from '../utils/audio';
+import { getGivenName } from '../utils/names';
 import confetti from 'canvas-confetti';
 
 interface HeroProps {
@@ -65,7 +66,7 @@ export const Hero: React.FC<HeroProps> = ({
             7 Sacred Milestones: Living Room Tea to Eternal Vows
           </p>
           <p className="mt-2.5 sm:mt-4 text-xs sm:text-sm text-[#573926] leading-relaxed max-w-2xl mx-auto font-sans-clean px-2">
-            Chronicles of <strong className="text-[#8B1E19]">{profile.groomName.split(' ')[0]}</strong> & <strong className="text-[#8B1E19]">{profile.brideName.split(' ')[0]}</strong>: 
+            Chronicles of <strong className="text-[#8B1E19]">{profile.groomName}</strong> & <strong className="text-[#8B1E19]">{profile.brideName}</strong>: 
             From the tea meet (<strong className="text-[#8B1E19]">06.05.2026</strong>) to the beach date (<strong className="text-sky-700">21.10.2026</strong>) and Grand Marriage (<strong className="text-red-700">10.02.2027</strong>).
           </p>
         </div>
@@ -87,9 +88,11 @@ export const Hero: React.FC<HeroProps> = ({
               </span>
             </div>
             <h3 className="font-serif-royal text-sm sm:text-lg font-bold text-[#8B1E19] mt-2.5 text-center line-clamp-1">
-              {profile.groomName.split(' ')[0]}
+              {profile.groomName}
             </h3>
-            <p className="text-[10px] sm:text-xs text-[#78350F] italic">"{profile.groomNickname}"</p>
+            {profile.groomNickname && profile.groomNickname.toLowerCase() !== getGivenName(profile.groomName).toLowerCase() && (
+              <p className="text-[10px] sm:text-xs text-[#78350F] italic">"{profile.groomNickname}"</p>
+            )}
           </div>
 
           {/* Central Sacred Knot / Heart */}
@@ -126,9 +129,11 @@ export const Hero: React.FC<HeroProps> = ({
               </span>
             </div>
             <h3 className="font-serif-royal text-sm sm:text-lg font-bold text-[#8B1E19] mt-2.5 text-center line-clamp-1">
-              {profile.brideName.split(' ')[0]}
+              {profile.brideName}
             </h3>
-            <p className="text-[10px] sm:text-xs text-[#78350F] italic">"{profile.brideNickname}"</p>
+            {profile.brideNickname && profile.brideNickname.toLowerCase() !== getGivenName(profile.brideName).toLowerCase() && (
+              <p className="text-[10px] sm:text-xs text-[#78350F] italic">"{profile.brideNickname}"</p>
+            )}
           </div>
         </div>
 

@@ -3,6 +3,7 @@ import { Heart, Sparkles, MessageSquareHeart, Users, Send } from 'lucide-react';
 import { FamilyMember, Blessing, CoupleProfile } from '../types';
 import { familyMembers, defaultBlessings } from '../data/marriageData';
 import { sound } from '../utils/audio';
+import { BLESSINGS_STORAGE_KEY, getGivenName } from '../utils/names';
 import confetti from 'canvas-confetti';
 
 interface BlessingsSectionProps {
@@ -11,7 +12,7 @@ interface BlessingsSectionProps {
 
 export const BlessingsSection: React.FC<BlessingsSectionProps> = ({ profile }) => {
   const [blessings, setBlessings] = useState<Blessing[]>(() => {
-    const saved = localStorage.getItem('indian_marriage_blessings');
+    const saved = localStorage.getItem(BLESSINGS_STORAGE_KEY);
     return saved ? JSON.parse(saved) : defaultBlessings;
   });
 
@@ -37,7 +38,7 @@ export const BlessingsSection: React.FC<BlessingsSectionProps> = ({ profile }) =
 
     const updated = [newBlessing, ...blessings];
     setBlessings(updated);
-    localStorage.setItem('indian_marriage_blessings', JSON.stringify(updated));
+    localStorage.setItem(BLESSINGS_STORAGE_KEY, JSON.stringify(updated));
 
     setAuthor('');
     setRelation('');
@@ -114,7 +115,7 @@ export const BlessingsSection: React.FC<BlessingsSectionProps> = ({ profile }) =
             <span>Leave a Sacred Blessing (ఆశీర్వాదం)</span>
           </h4>
           <p className="text-[11px] sm:text-xs text-[#78350F] mb-3">
-            Send your warm wishes for {profile.groomName.split(' ')[0]} & {profile.brideName.split(' ')[0]}'s wedding.
+            Send your warm wishes for {getGivenName(profile.groomName)} & {getGivenName(profile.brideName)}'s wedding.
           </p>
 
           <form onSubmit={handleSubmitBlessing} className="space-y-3">

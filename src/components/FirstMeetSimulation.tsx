@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Coffee, Heart, Sparkles, CheckCircle2, RotateCcw, Award, Users } from 'lucide-react';
 import { CoupleProfile } from '../types';
 import { sound } from '../utils/audio';
+import { getGivenName } from '../utils/names';
 import confetti from 'canvas-confetti';
 
 interface FirstMeetSimulationProps {
@@ -13,6 +14,8 @@ export const FirstMeetSimulation: React.FC<FirstMeetSimulationProps> = ({
   profile,
   onContinueToEngagement
 }) => {
+  const brideFirst = getGivenName(profile.brideName);
+  const groomFirst = getGivenName(profile.groomName);
   const [step, setStep] = useState<number>(0);
   const [chemistry, setChemistry] = useState<number>(25);
   const [history, setHistory] = useState<string[]>([]);
@@ -23,20 +26,20 @@ export const FirstMeetSimulation: React.FC<FirstMeetSimulationProps> = ({
       title: 'Scene 1: The Living Room Tea Tray Arrival',
       subtitle: 'May 6, 2026 • 11:45 AM • In front of 18 family elders',
       context:
-        `Rohan sat upright on the sofa with both hands on his knees, surrounded by his parents, uncle, and grandmother. The door opened and ${profile.brideName} stepped into the living room, holding a silver tray with steaming cardamom tea and kaju katlis.`,
-      question: `As ${profile.brideName} handed Rohan his cup of tea, their eyes met for the very first time. What was Rohan's reaction?`,
+        `${groomFirst} sat upright on the sofa with both hands on his knees, surrounded by his parents, uncle, and grandmother. The door opened and ${brideFirst} stepped into the living room, holding a silver tray with steaming cardamom tea and kaju katlis.`,
+      question: `As ${brideFirst} handed ${groomFirst} his cup of tea, their eyes met for the very first time. What was ${groomFirst}'s reaction?`,
       options: [
         {
           label: 'A polite smile and nervous hands',
           dialogue: 'He said "Dhanyawad" so softly that only she could hear, and took three packets of sugar without noticing!',
           score: 25,
-          reaction: 'Pooja secretly smiled seeing how down-to-earth and endearingly nervous he was.'
+          reaction: `${brideFirst} secretly smiled seeing how down-to-earth and endearingly nervous he was.`
         },
         {
           label: 'Complimented the aroma of cardamom tea',
           dialogue: '"This smells like authentic homemade elaichi chai, my absolute favorite."',
           score: 25,
-          reaction: "Pooja's mother beamed with pride from the kitchen door!"
+          reaction: `${brideFirst}'s mother beamed with pride from the kitchen door!`
         },
         {
           label: 'A respectful bow and warm eye contact',
@@ -54,16 +57,16 @@ export const FirstMeetSimulation: React.FC<FirstMeetSimulationProps> = ({
       question: `Who broke the ice on the balcony and how?`,
       options: [
         {
-          label: 'Rohan asked the candid arranged marriage question',
+          label: `${groomFirst} asked the candid arranged marriage question`,
           dialogue: '"Be honest with me... did your parents force you to dress up like this, or are you happy to chat?"',
           score: 30,
-          reaction: `${profile.brideName} burst out laughing! "I was going to ask you the exact same thing!" Tension = 0.`
+          reaction: `${brideFirst} burst out laughing! "I was going to ask you the exact same thing!" Tension = 0.`
         },
         {
-          label: 'Pooja laughed about the family interrogation',
+          label: `${brideFirst} laughed about the family interrogation`,
           dialogue: '"My uncle is probably outside writing your answers in a spreadsheet right now!"',
           score: 30,
-          reaction: 'Rohan laughed out loud and loosened his collar: "I prepared for this like an interview!"'
+          reaction: `${groomFirst} laughed out loud and loosened his collar: "I prepared for this like an interview!"`
         },
         {
           label: 'They bonded over weekend escapes and chai',
@@ -82,13 +85,13 @@ export const FirstMeetSimulation: React.FC<FirstMeetSimulationProps> = ({
       options: [
         {
           label: 'A secret nod between the couple',
-          dialogue: 'Rohan glanced at Pooja, she nodded gently, and Rohan turned to his parents: "Ma, Pa... it is a resounding YES from my side."',
+          dialogue: `${groomFirst} glanced at ${brideFirst}, she nodded gently, and ${groomFirst} turned to his parents: "Ma, Pa... it is a resounding YES from my side."`,
           score: 30,
           reaction: 'Both mothers hugged with tears of joy, and fathers fed each other Kaju Katli!'
         },
         {
           label: 'The grandmother offered her heirloom kada',
-          dialogue: 'Dadi ji took Pooja\'s hands into hers and blessed her: "You are the Lakshmi our family has been praying for."',
+          dialogue: `Dadi ji took ${brideFirst}'s hands into hers and blessed her: "You are the Lakshmi our family has been praying for."`,
           score: 30,
           reaction: 'Temple bells rang in spirit and July 1st was immediately locked for Engagement!'
         }

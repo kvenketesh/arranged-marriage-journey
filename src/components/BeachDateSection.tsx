@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Sunset, Moon, Sun, Waves, Sparkles, Heart, Coffee, Utensils, MessageCircle, Music, Volume2, VolumeX } from 'lucide-react';
 import { CoupleProfile } from '../types';
 import { sound } from '../utils/audio';
+import { getGivenName } from '../utils/names';
 import confetti from 'canvas-confetti';
 
 interface BeachDateSectionProps {
@@ -10,8 +11,10 @@ interface BeachDateSectionProps {
 }
 
 export const BeachDateSection: React.FC<BeachDateSectionProps> = ({ profile, onOpenPhotoStudio }) => {
+  const brideFirst = getGivenName(profile.brideName);
+  const groomFirst = getGivenName(profile.groomName);
   const [skyTheme, setSkyTheme] = useState<'sunset' | 'golden' | 'night'>('sunset');
-  const [sandMessage, setSandMessage] = useState<string>(`${profile.brideName.split(' ')[0]} ❤️ ${profile.groomName.split(' ')[0]} • 21.10.2026`);
+  const [sandMessage, setSandMessage] = useState<string>(`${brideFirst} ❤️ ${groomFirst} • 21.10.2026`);
   const [tempMessage, setTempMessage] = useState<string>('');
   const [isWaveWashing, setIsWaveWashing] = useState<boolean>(false);
   const [activeTab, setActiveTab] = useState<'beach' | 'feast' | 'conversation'>('beach');
@@ -135,7 +138,7 @@ export const BeachDateSection: React.FC<BeachDateSectionProps> = ({ profile, onO
             21.10.2026 • The Coastline Escape
           </h3>
           <p className="text-xs sm:text-sm text-white/90 drop-shadow mt-1.5 leading-relaxed">
-            After Rohan was pampered with 10 dishes at Pooja's house, they drove to the beach.
+            After {groomFirst} was pampered with 10 dishes at {brideFirst}'s house, they drove to the beach.
             With the sea breeze tangling their hair, all wedding stress faded into laughter.
           </p>
         </div>
@@ -252,7 +255,7 @@ export const BeachDateSection: React.FC<BeachDateSectionProps> = ({ profile, onO
                 Collecting Seashells
               </h4>
               <p className="text-xs text-[#573926] leading-relaxed mt-1">
-                Rohan found a spiral pearl-like seashell and handed it to Pooja: "First treasure from our first official trip." She still keeps it.
+                {groomFirst} found a spiral pearl-like seashell and handed it to {brideFirst}: "First treasure from our first official trip." She still keeps it.
               </p>
             </div>
           </div>
@@ -266,7 +269,7 @@ export const BeachDateSection: React.FC<BeachDateSectionProps> = ({ profile, onO
               <span>10-Course Hospitality at Bride's House (21 Oct Morning)</span>
             </h4>
             <p className="text-xs sm:text-sm text-[#573926] leading-relaxed mb-3">
-              Before the beach, Rohan received the supreme royal treatment as the newly engaged "Damad Ji".
+              Before the beach, {groomFirst} received the supreme royal treatment as the newly engaged "Damad Ji".
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-xs">
               <div className="p-2.5 bg-white rounded-xl border border-amber-200">
@@ -293,13 +296,13 @@ export const BeachDateSection: React.FC<BeachDateSectionProps> = ({ profile, onO
         {activeTab === 'conversation' && (
           <div className="p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-sky-50/70 border border-sky-300 shadow-sm animate-fadeIn space-y-2.5 text-xs sm:text-sm text-[#573926]">
             <div className="p-3 bg-white rounded-xl border border-sky-200">
-              <span className="font-bold text-[#8B1E19]">Rohan:</span> "Do you remember how stiff I was on May 6th in your living room? I was terrified your grandfather would grill me!"
+              <span className="font-bold text-[#8B1E19]">{groomFirst}:</span> "Do you remember how stiff I was on May 6th in your living room? I was terrified your grandfather would grill me!"
             </div>
             <div className="p-3 bg-white rounded-xl border border-sky-200">
-              <span className="font-bold text-[#0284C7]">Pooja:</span> "Haha! My dadi told me: 'He is an engineer, ask if he can fix our TV!' But when we sat on the balcony, I knew you had a pure heart."
+              <span className="font-bold text-[#0284C7]">{brideFirst}:</span> "Haha! My dadi told me: 'He is an engineer, ask if he can fix our TV!' But when we sat on the balcony, I knew you had a pure heart."
             </div>
             <div className="p-3 bg-white rounded-xl border border-sky-200">
-              <span className="font-bold text-[#8B1E19]">Rohan:</span> "Looking at the endless ocean today, as long as you're by my side, every storm feels like music."
+              <span className="font-bold text-[#8B1E19]">{groomFirst}:</span> "Looking at the endless ocean today, as long as you're by my side, every storm feels like music."
             </div>
           </div>
         )}

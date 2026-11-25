@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Volume2, VolumeX, Heart, Camera, Music } from 'lucide-react';
 import { sound, OccasionTrackId } from '../utils/audio';
+import { getGivenName } from '../utils/names';
 import { CoupleProfile } from '../types';
 
 interface NavbarProps {
@@ -61,11 +62,11 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div>
               <div className="flex items-center gap-1 sm:gap-1.5">
                 <span className="font-serif-royal text-base sm:text-2xl font-bold text-[#8B1E19] tracking-wide">
-                  {profile.groomName.split(' ')[0]}
+                  {getGivenName(profile.groomName)}
                 </span>
                 <Heart className="w-3 h-3 sm:w-4 sm:h-4 text-rose-600 fill-rose-600 animate-pulse" />
                 <span className="font-serif-royal text-base sm:text-2xl font-bold text-[#8B1E19] tracking-wide">
-                  {profile.brideName.split(' ')[0]}
+                  {getGivenName(profile.brideName)}
                 </span>
               </div>
               <p className="text-[9px] sm:text-[11px] font-sans-clean font-medium text-[#78350F] tracking-wider uppercase hidden xs:block">
