@@ -357,7 +357,7 @@ export const milestoneEvents: MilestoneEvent[] = [
     highlights: [
       'Consecration of the sacred bamboo pole with turmeric, kumkum, and sacred yellow thread',
       'Tying of mango leaf festoons (Mavidakula Thoranam) to welcome divine energies',
-      'Ganesha Swetha and coconut breaking to ensure an obstacle-free wedding',
+      'Ganesha Pooja and coconut breaking to ensure an obstacle-free wedding',
       'Arrival of extended relatives from across the globe, filling the house with festive commotion'
     ],
     ritualsAndHospitality: [
