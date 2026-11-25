@@ -571,12 +571,12 @@ export const milestoneEvents: MilestoneEvent[] = [
 export const familyMembers: FamilyMember[] = [
   {
     id: 'f-1',
-    name: 'Pandit Ji / Dadi Maa',
-    relation: 'Eldest Matriarch',
+    name: 'Pandit Ji',
+    relation: 'Sacred Matchmaker & Priest',
     side: 'groom',
-    avatar: '👵🏽',
-    funFact: 'Matches 36 Gunas in 2 minutes and knows every family secret!',
-    firstMeetReaction: 'Gave a 100-rupee blessed shagun envelope immediately after the first sip of tea on May 6th!'
+    avatar: '🙏🏽',
+    funFact: 'Matches 36 Gunas in 2 minutes and found the most auspicious muhurthams!',
+    firstMeetReaction: 'Blessed the alliance immediately with holy akshatalu after seeing how well both families bonded on May 6th!'
   },
   {
     id: 'f-2',
@@ -598,10 +598,10 @@ export const familyMembers: FamilyMember[] = [
   },
   {
     id: 'f-4',
-    name: 'Ananya & Sahil',
-    relation: 'The Mischievous Cousins Roster',
+    name: 'Karthik & Sidhhu',
+    relation: 'The Mischievous Brothers Roster',
     side: 'bride',
-    avatar: '👧🏽👦🏽',
+    avatar: '👦🏽👦🏽',
     funFact: 'Already drafted the contract for the "Joota Chupai" (shoe stealing) bounty for 10.02.2027!',
     firstMeetReaction: 'Spied on the garden talk and reported: "Chemistry is 100/100!"'
   }
@@ -610,7 +610,7 @@ export const familyMembers: FamilyMember[] = [
 export const defaultBlessings: Blessing[] = [
   {
     id: 'b-1',
-    author: 'Uncle & Aunty Mehta',
+    author: 'Uncle & Aunty Kotnala',
     relation: 'Family Friends',
     message: 'From the first meet on May 6th and your Oct 21st beach date, to the upcoming Dec 13th Pasupu, Feb 2027 wedding and Valentine reception, you two are made for each other! Sada Sukhi Raho! 🪷',
     timestamp: '2 hours ago',
@@ -618,17 +618,17 @@ export const defaultBlessings: Blessing[] = [
   },
   {
     id: 'b-2',
-    author: 'Neha (College Bestie)',
-    relation: "Swetha's Friend",
-    message: 'I still remember Swetha calling me right after the May 6 verandah talk blushing like crazy! Can not wait for the February 10 Kalyanam and 14th Valentine Reception! 🎉💍',
+    author: 'Sujji & Mouni (College Bestie)',
+    relation: "Swetha's Besties",
+    message: 'We still remember Swetha calling us right after the May 6 verandah talk blushing like crazy! Can not wait for the February 10 Kalyanam and 14th Valentine Reception! 🎉💍',
     timestamp: '5 hours ago',
     symbol: '💖'
   },
   {
     id: 'b-3',
-    author: 'Vikram',
-    relation: "Venketesh's Childhood Bro",
-    message: 'Bro, you went from being super nervous on May 6 to glowing on the beach in Oct and ready for marriage in Feb! Love you both!',
+    author: 'Priyabrata & Ratikanta',
+    relation: "Venketesh's Childhood Bros",
+    message: 'Bro, you went from being super nervous on May 6 to smiling on the beach in Oct and ready for marriage in Feb! Love you both!',
     timestamp: '1 day ago',
     symbol: '🌊'
   }

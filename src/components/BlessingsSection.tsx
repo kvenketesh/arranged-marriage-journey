@@ -127,7 +127,7 @@ export const BlessingsSection: React.FC<BlessingsSectionProps> = ({ profile }) =
                 type="text"
                 value={author}
                 onChange={e => setAuthor(e.target.value)}
-                placeholder="e.g. Dadi, Chacha, Friend..."
+                placeholder="e.g. Pandit Ji, Chacha, Friend..."
                 className="w-full px-3 py-2 rounded-xl bg-amber-50/50 border border-amber-200 text-xs text-[#2C1810] focus:ring-1 focus:ring-[#8B1E19] focus:outline-none"
                 required
               />
