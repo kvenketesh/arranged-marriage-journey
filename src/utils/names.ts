@@ -1,5 +1,5 @@
 export const PROFILE_STORAGE_KEY = 'bandhan_couple_profile_v2';
-export const BLESSINGS_STORAGE_KEY = 'bandhan_blessings_v3';
+export const BLESSINGS_STORAGE_KEY = 'bandhan_blessings_v4';
 
 /**
  * Extracts the given name from Indian names that may start with an initial

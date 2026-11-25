@@ -604,6 +604,15 @@ export const familyMembers: FamilyMember[] = [
     avatar: '👦🏽👦🏽',
     funFact: 'Already drafted the contract for the "Joota Chupai" (shoe stealing) bounty for 10.02.2027!',
     firstMeetReaction: 'Spied on the garden talk and reported: "Chemistry is 100/100!"'
+  },
+  {
+    id: 'f-5',
+    name: 'Buji & Shiva',
+    relation: "Venketesh's Sister & Brother",
+    side: 'groom',
+    avatar: '👧🏽👦🏽',
+    funFact: 'Always hyping up Venketesh and already planning special sibling dances for the wedding and reception!',
+    firstMeetReaction: 'Welcomed Swetha like family right from May 6th and promised to always have her back!'
   }
 ];
 
@@ -627,8 +636,8 @@ export const defaultBlessings: Blessing[] = [
   {
     id: 'b-3',
     author: 'Priyabrata & Ratikanta',
-    relation: "Venketesh's Childhood Bros",
-    message: 'Bro, you went from being super nervous on May 6 to smiling on the beach in Oct and ready for marriage in Feb! Love you both!',
+    relation: "Venketesh's Colleagues",
+    message: 'From being super nervous on May 6 to smiling on the beach in Oct and ready for marriage in Feb—wishing you both a lifetime of happiness!',
     timestamp: '1 day ago',
     symbol: '🌊'
   }
