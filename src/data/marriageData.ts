@@ -79,9 +79,9 @@ export const milestoneEvents: MilestoneEvent[] = [
     ],
     familyQuotes: [
       {
-        speaker: 'Dadi Ji (Groom\'s Grandmother)',
-        relation: 'Eldest Matriarch',
-        avatar: '👵🏽',
+        speaker: "Groom's Aunt",
+        relation: 'Family Elder',
+        avatar: '👩🏽',
         quote: 'As soon as Swetha stepped into the room with that gentle grace, I told Venketesh\'s mother: "Look no further, our house has found its Laxmi."'
       },
       {
