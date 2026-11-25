@@ -37,7 +37,7 @@ export const Footer: React.FC<FooterProps> = ({ profile }) => {
         </p>
 
         {/* 7-Milestone Recap Stream */}
-        <div className="flex flex-wrap items-center justify-center gap-2 text-[11px] mb-10 max-w-4xl mx-auto">
+        <div className="flex flex-wrap items-center justify-center gap-2 text-[11px] mb-10 max-w-5xl mx-auto">
           <span className="px-3 py-1 rounded-full bg-white/10 border border-amber-400/40 text-amber-200">
             06.05.2026 • First Meet
           </span>
@@ -46,24 +46,24 @@ export const Footer: React.FC<FooterProps> = ({ profile }) => {
             01.07.2026 • Engagement
           </span>
           <span className="text-amber-500">→</span>
-          <span className="px-3 py-1 rounded-full bg-white/10 border border-yellow-400/40 text-yellow-200">
-            13.10.2026 • Pasupu Function
-          </span>
-          <span className="text-amber-500">→</span>
           <span className="px-3 py-1 rounded-full bg-white/10 border border-sky-400/40 text-sky-200">
             21.10.2026 • Beach Date
           </span>
           <span className="text-amber-500">→</span>
+          <span className="px-3 py-1 rounded-full bg-white/10 border border-yellow-400/40 text-yellow-200">
+            13.12.2026 • Pasupu Function (yet to happen)
+          </span>
+          <span className="text-amber-500">→</span>
           <span className="px-3 py-1 rounded-full bg-white/10 border border-emerald-400/40 text-emerald-200">
-            08.02.2027 • Pandiri Rata
+            08.02.2027 • Pandiri Rata (yet to happen)
           </span>
           <span className="text-amber-500">→</span>
           <span className="px-3 py-1 rounded-full bg-red-950/80 border border-red-400 text-red-200 font-bold">
-            10.02.2027 • The Marriage 💍
+            10.02.2027 • The Marriage 💍 (yet to happen)
           </span>
           <span className="text-amber-500">→</span>
           <span className="px-3 py-1 rounded-full bg-white/10 border border-indigo-400/40 text-indigo-200">
-            14.02.2027 • Reception
+            14.02.2027 • Reception (yet to happen)
           </span>
         </div>
 

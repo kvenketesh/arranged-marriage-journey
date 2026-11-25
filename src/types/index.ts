@@ -26,6 +26,7 @@ export interface MilestoneEvent {
   date: string; // YYYY-MM-DD
   displayDateBadge: string; // DD.MM.YYYY
   formattedDate: string;
+  isUpcoming?: boolean;
   location: string;
   locationDetails: string;
   coverImage: string;

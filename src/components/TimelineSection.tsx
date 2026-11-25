@@ -106,6 +106,11 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({
                   <span className="text-xs font-bold font-mono px-2.5 py-1 rounded-lg bg-[#8B1E19] text-white shadow-sm">
                     {event.displayDateBadge}
                   </span>
+                  {event.isUpcoming && (
+                    <span className="text-[10px] font-semibold text-amber-800 bg-amber-100 px-1.5 py-0.5 rounded mt-1">
+                      (yet to happen)
+                    </span>
+                  )}
                   <span className="text-[11px] font-semibold text-[#78350F] mt-1 font-serif-royal">
                     {event.formattedDate.split('(')[0]}
                   </span>
@@ -121,13 +126,13 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({
                   {/* Top Header Banner */}
                   <div className={`p-4 sm:p-8 bg-gradient-to-br ${event.accentBg} border-b border-[#D4AF37]/20`}>
                     <div className="flex flex-wrap items-center justify-between gap-2 mb-2 sm:mb-3">
-                      <div className="flex items-center gap-1.5 sm:gap-2">
+                      <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
                         {/* Mobile date badge */}
                         <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-md bg-[#8B1E19] text-white sm:hidden">
-                          {event.displayDateBadge}
+                          {event.displayDateBadge}{event.isUpcoming ? ' (yet to happen)' : ''}
                         </span>
                         <span className="px-2.5 py-0.5 rounded-full bg-white/90 backdrop-blur-sm border border-[#D4AF37]/40 text-[10px] sm:text-xs font-semibold text-[#78350F]">
-                          Chapter {index + 1} of 7
+                          Chapter {index + 1} of 7{event.isUpcoming ? ' • (yet to happen)' : ''}
                         </span>
                       </div>
 
@@ -165,7 +170,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({
                     <div className="flex flex-wrap items-center gap-3 text-[11px] sm:text-xs text-[#573926] mt-2.5 pt-2.5 border-t border-[#D4AF37]/20">
                       <div className="flex items-center gap-1 font-medium">
                         <Calendar className="w-3 h-3 text-[#8B1E19]" />
-                        <span>{event.formattedDate}</span>
+                        <span>{event.formattedDate}{event.isUpcoming ? ' (yet to happen)' : ''}</span>
                       </div>
                       <div className="flex items-center gap-1 font-medium">
                         <MapPin className="w-3 h-3 text-[#8B1E19]" />

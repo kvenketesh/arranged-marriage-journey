@@ -64,7 +64,7 @@ export const MusicPlayerBar: React.FC = () => {
                           {track.title}
                         </span>
                         <span className="text-[9px] font-mono px-1.5 py-0.2 rounded bg-amber-100 text-[#78350F] font-semibold shrink-0">
-                          {track.date}
+                          {track.date}{track.isUpcoming ? ' (yet to happen)' : ''}
                         </span>
                       </div>
                       <p className="text-[10px] text-[#78350F] truncate">
@@ -116,7 +116,7 @@ export const MusicPlayerBar: React.FC = () => {
               />
             </div>
             <p className="text-[10px] text-amber-300/85 truncate">
-              {audioState.isPlaying ? '♪ Playing' : 'Tap ▶ to Play'} • {currentTrackMeta.moodLabel} ({currentTrackMeta.date})
+              {audioState.isPlaying ? '♪ Playing' : 'Tap ▶ to Play'} • {currentTrackMeta.moodLabel} ({currentTrackMeta.date}{currentTrackMeta.isUpcoming ? ' yet to happen' : ''})
             </p>
           </div>
         </button>

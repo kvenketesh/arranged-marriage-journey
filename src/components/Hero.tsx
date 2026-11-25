@@ -29,13 +29,13 @@ export const Hero: React.FC<HeroProps> = ({
   };
 
   const milestonesList = [
-    { id: 'first-meet', date: '06.05.2026', title: '1. First Meet', sub: "Bride's Home with Family", color: 'border-amber-300 bg-amber-50/80 hover:border-amber-500' },
-    { id: 'engagement', date: '01.07.2026', title: '2. Engagement', sub: 'Ring Exchange Ceremony', color: 'border-rose-300 bg-rose-50/80 hover:border-rose-500' },
-    { id: 'pasupu', date: '13.10.2026', title: '3. Pasupu Function', sub: 'Sacred Haldi & Nalugu', color: 'border-yellow-300 bg-yellow-50/80 hover:border-yellow-500' },
-    { id: 'beach-visit', date: '21.10.2026', title: '4. Beach Date', sub: 'Damad Ji Visit & Waves', color: 'border-sky-300 bg-sky-50/80 hover:border-sky-500' },
-    { id: 'pandiri-rata', date: '08.02.2027', title: '5. Pandiri Rata', sub: 'Wedding Pandal Pooja', color: 'border-emerald-300 bg-emerald-50/80 hover:border-emerald-500' },
-    { id: 'marriage', date: '10.02.2027', title: '6. The Marriage', sub: 'Kalyana Muhurtham', color: 'border-red-400 bg-red-50/90 hover:border-red-600 font-bold' },
-    { id: 'reception', date: '14.02.2027', title: '7. Grand Reception', sub: "Valentine's Evening Gala", color: 'border-indigo-300 bg-indigo-50/80 hover:border-indigo-500' }
+    { id: 'first-meet', date: '06.05.2026', upcoming: false, title: '1. First Meet', sub: "Bride's Home with Family", color: 'border-amber-300 bg-amber-50/80 hover:border-amber-500' },
+    { id: 'engagement', date: '01.07.2026', upcoming: false, title: '2. Engagement', sub: 'Ring Exchange Ceremony', color: 'border-rose-300 bg-rose-50/80 hover:border-rose-500' },
+    { id: 'beach-visit', date: '21.10.2026', upcoming: false, title: '3. Beach Date', sub: 'Damad Ji Visit & Waves', color: 'border-sky-300 bg-sky-50/80 hover:border-sky-500' },
+    { id: 'pasupu', date: '13.12.2026', upcoming: true, title: '4. Pasupu Function', sub: 'Sacred Haldi & Nalugu', color: 'border-yellow-300 bg-yellow-50/80 hover:border-yellow-500' },
+    { id: 'pandiri-rata', date: '08.02.2027', upcoming: true, title: '5. Pandiri Rata', sub: 'Wedding Pandal Pooja', color: 'border-emerald-300 bg-emerald-50/80 hover:border-emerald-500' },
+    { id: 'marriage', date: '10.02.2027', upcoming: true, title: '6. The Marriage', sub: 'Kalyana Muhurtham', color: 'border-red-400 bg-red-50/90 hover:border-red-600 font-bold' },
+    { id: 'reception', date: '14.02.2027', upcoming: true, title: '7. Grand Reception', sub: "Valentine's Evening Gala", color: 'border-indigo-300 bg-indigo-50/80 hover:border-indigo-500' }
   ];
 
   return (
@@ -67,7 +67,7 @@ export const Hero: React.FC<HeroProps> = ({
           </p>
           <p className="mt-2.5 sm:mt-4 text-xs sm:text-sm text-[#573926] leading-relaxed max-w-2xl mx-auto font-sans-clean px-2">
             Chronicles of <strong className="text-[#8B1E19]">{profile.groomName}</strong> & <strong className="text-[#8B1E19]">{profile.brideName}</strong>: 
-            From the tea meet (<strong className="text-[#8B1E19]">06.05.2026</strong>) to the beach date (<strong className="text-sky-700">21.10.2026</strong>) and Grand Marriage (<strong className="text-red-700">10.02.2027</strong>).
+            First Meet (<strong className="text-[#8B1E19]">06.05.2026</strong>), Engagement (<strong className="text-[#8B1E19]">01.07.2026</strong>), Beach Date (<strong className="text-sky-700">21.10.2026</strong>), and upcoming Pasupu (<strong className="text-yellow-700">13.12.2026 (yet to happen)</strong>), Pandiri Rata (<strong className="text-emerald-700">08.02.2027 (yet to happen)</strong>), Marriage (<strong className="text-red-700">10.02.2027 (yet to happen)</strong>) & Reception (<strong className="text-indigo-700">14.02.2027 (yet to happen)</strong>).
           </p>
         </div>
 
@@ -109,8 +109,8 @@ export const Hero: React.FC<HeroProps> = ({
             <span className="text-[10px] sm:text-xs font-bold text-[#8B1E19] mt-1.5 tracking-wider uppercase">
               Bandham
             </span>
-            <span className="text-[9px] sm:text-[10px] text-[#78350F] font-mono font-bold">
-              10 Feb 2027 💍
+            <span className="text-[9px] sm:text-[10px] text-[#78350F] font-mono font-bold text-center">
+              10 Feb 2027 (yet to happen) 💍
             </span>
           </div>
 
@@ -168,6 +168,11 @@ export const Hero: React.FC<HeroProps> = ({
                 <p className="text-[9px] sm:text-[10px] text-[#573926] opacity-80 line-clamp-1 mt-0.5">
                   {m.sub}
                 </p>
+                {m.upcoming && (
+                  <span className="text-[9px] font-semibold text-amber-800 bg-white/80 rounded px-1 mt-1 inline-block">
+                    (yet to happen)
+                  </span>
+                )}
               </div>
             ))}
           </div>

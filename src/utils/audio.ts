@@ -15,6 +15,7 @@ export interface OccasionTrack {
   title: string;
   subtitle: string;
   date: string;
+  isUpcoming?: boolean;
   emoji: string;
   moodLabel: string;
   tempoMs: number;
@@ -26,6 +27,7 @@ export const OCCASION_TRACKS: OccasionTrack[] = [
     title: 'Chai & Shy Glances',
     subtitle: 'Raag Yaman Bansuri & Santoor',
     date: '06.05.2026',
+    isUpcoming: false,
     emoji: '☕',
     moodLabel: 'First Meet',
     tempoMs: 420
@@ -35,33 +37,37 @@ export const OCCASION_TRACKS: OccasionTrack[] = [
     title: 'Sagai Shehnai',
     subtitle: 'Royal Reed, Harp & Bells',
     date: '01.07.2026',
+    isUpcoming: false,
     emoji: '💍',
     moodLabel: 'Engagement',
     tempoMs: 360
-  },
-  {
-    id: 'pasupu',
-    title: 'Pasupu & Haldi Joy',
-    subtitle: 'Festive Folk & Dholak Beats',
-    date: '13.10.2026',
-    emoji: '💛',
-    moodLabel: 'Pasupu Function',
-    tempoMs: 280
   },
   {
     id: 'beach-visit',
     title: 'Sunset Waves & Guitar',
     subtitle: 'Ocean Surf & Acoustic Chords',
     date: '21.10.2026',
+    isUpcoming: false,
     emoji: '🌊',
     moodLabel: 'Beach Date',
     tempoMs: 440
+  },
+  {
+    id: 'pasupu',
+    title: 'Pasupu & Haldi Joy',
+    subtitle: 'Festive Folk & Dholak Beats',
+    date: '13.12.2026',
+    isUpcoming: true,
+    emoji: '💛',
+    moodLabel: 'Pasupu Function',
+    tempoMs: 280
   },
   {
     id: 'pandiri-rata',
     title: 'Subha Pandiri',
     subtitle: 'Mangala Vadhyam & Temple Bells',
     date: '08.02.2027',
+    isUpcoming: true,
     emoji: '🌿',
     moodLabel: 'Pandiri Rata',
     tempoMs: 330
@@ -71,6 +77,7 @@ export const OCCASION_TRACKS: OccasionTrack[] = [
     title: 'Kalyana Vaibhogam',
     subtitle: 'Raag Mohanam Divine Muhurtham',
     date: '10.02.2027',
+    isUpcoming: true,
     emoji: '🪷',
     moodLabel: 'The Marriage',
     tempoMs: 340
@@ -80,6 +87,7 @@ export const OCCASION_TRACKS: OccasionTrack[] = [
     title: "Valentine's Evening Waltz",
     subtitle: 'Romantic Violin & Grand Piano',
     date: '14.02.2027',
+    isUpcoming: true,
     emoji: '🎻',
     moodLabel: 'Reception Gala',
     tempoMs: 380
@@ -481,7 +489,7 @@ class SoundFX {
       }
 
       case 'pasupu': {
-        // 13.10.2026 — Pasupu & Haldi Joy: Upbeat Festive Folk + Bouncy Dholak
+        // 13.12.2026 — Pasupu & Haldi Joy: Upbeat Festive Folk + Bouncy Dholak
         const s = step % 16;
         if (s === 0 || s === 8) this.playPadChord([N.C3, N.G3, N.E4], 2.2, 0.035);
 

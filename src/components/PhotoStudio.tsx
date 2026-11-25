@@ -87,37 +87,37 @@ export const PhotoStudio: React.FC<PhotoStudioProps> = ({
       color: 'border-rose-300 bg-rose-50/50 text-rose-900'
     },
     {
-      field: 'pasupuPhoto',
-      label: '3. Pasupu Function',
-      date: '13.10.2026',
-      sub: 'Turmeric Haldi & flower shower',
-      color: 'border-yellow-300 bg-yellow-50/50 text-yellow-900'
-    },
-    {
       field: 'beachPhoto',
-      label: '4. Beach Date',
+      label: '3. Beach Date',
       date: '21.10.2026',
       sub: 'Damad ji visit & sunset waves',
       color: 'border-sky-300 bg-sky-50/50 text-sky-900'
     },
     {
+      field: 'pasupuPhoto',
+      label: '4. Pasupu Function',
+      date: '13.12.2026 (yet to happen)',
+      sub: 'Turmeric Haldi & flower shower',
+      color: 'border-yellow-300 bg-yellow-50/50 text-yellow-900'
+    },
+    {
       field: 'pandiriRataPhoto',
       label: '5. Pandiri Rata',
-      date: '08.02.2027',
+      date: '08.02.2027 (yet to happen)',
       sub: 'Sacred bamboo pole & pandal',
       color: 'border-emerald-300 bg-emerald-50/50 text-emerald-900'
     },
     {
       field: 'marriagePhoto',
       label: '6. The Marriage',
-      date: '10.02.2027',
+      date: '10.02.2027 (yet to happen)',
       sub: 'Muhurtham & Talambralu',
       color: 'border-red-400 bg-red-50/50 text-red-950 font-bold'
     },
     {
       field: 'receptionPhoto',
       label: '7. Grand Reception',
-      date: '14.02.2027',
+      date: '14.02.2027 (yet to happen)',
       sub: "Valentine's evening gala & cake",
       color: 'border-indigo-300 bg-indigo-50/50 text-indigo-950'
     }

@@ -172,94 +172,7 @@ export const milestoneEvents: MilestoneEvent[] = [
     ]
   },
 
-  // 3. Pasupu Function: 13.10.2026
-  {
-    id: 'pasupu',
-    key: 'pasupu',
-    title: 'The Sacred Pasupu Function (Haldi & Nalugu)',
-    hindiTitle: 'పసుపు వేడుక (हल्दी एवं नलगु समारोह)',
-    subTitle: 'Grinding Sacred Turmeric Roots, Golden Radiance & Joyful Songs',
-    date: '2026-10-13',
-    displayDateBadge: '13.10.2026',
-    formattedDate: 'October 13, 2026 (Tuesday)',
-    location: "Courtyard of Bride's Ancestral Home",
-    locationDetails: 'Decorated with Sunburst Marigolds, Brass Urulis with Floating Petals & Stone Mortars',
-    coverImage: 'https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?auto=format&fit=crop&w=1200&q=80',
-    themeColor: '#EAB308', // Radiant Turmeric Yellow
-    accentBg: 'from-yellow-50 to-amber-100',
-    audioMood: 'festive',
-    culturalContext:
-      'The Pasupu ceremony (Pasupu Kottadam / Danchadam / Nalugu) is one of the most auspicious and vibrant pre-wedding traditions. Married women (Muthaidhavulu) gather to grind whole organic turmeric roots into fragrant golden paste using traditional stone mortars (Rolu-Roddalu) while singing melodious wedding folk songs. The cooling paste is then lovingly applied to the bride and groom to sanctify, protect, and impart a bridal glow.',
-    narrative: {
-      lead: 'A courtyard bathed in sunburst yellow, fragrant fresh turmeric paste, and unrestrained laughter as relatives showered blessings.',
-      paragraphs: [
-        'On October 13, 2026, the courtyard was transformed into a sea of yellow silk sarees and kurtas. The sound of rhythmic pestle beats on the stone mortar echoed through the morning air as the aunts sang traditional Telugu mangala harathis.',
-        'Swetha sat gracefully on a wooden peeta, surrounded by brass diyas and baskets piled high with raw golden turmeric rhizomes. Her grandmother initiated the ritual by applying the fragrant paste on her feet, palms, and cheeks with a betel leaf.',
-        'Within minutes, the solemn blessing turned into playful celebrations! The cousins began smearing haldi on each other, splashing scented rose water, and teasing Swetha about how Venketesh would react when he saw her golden radiance.',
-        'The ceremony concluded with the Mangala Snanam (sacred purification bath) with holy water infused with jasmine blossoms, leaving Swetha beaming with unmistakable bridal joy.'
-      ],
-      behindTheScenes:
-        'Swetha\'s little cousins playfully sneaked behind her with yellow water guns filled with turmeric rose-water, turning the backyard into a playful Holi battlefield!'
-    },
-    highlights: [
-      'Pounding of raw whole turmeric roots in decorated stone mortars (Pasupu Danchadam)',
-      'Application of cooling Nalugu herbal paste and yellow turmeric on feet and cheeks',
-      'Singing of ancestral wedding folk songs and offering Mangala Harathi',
-      'The sacred floral shower (Poola Varsham) and distribution of yellow shagun sarees'
-    ],
-    ritualsAndHospitality: [
-      {
-        title: 'Pasupu Danchadam (Turmeric Pounding)',
-        description: 'Five married women pestle turmeric roots together symbolizing teamwork, health, and mutual prosperity.',
-        category: 'ritual'
-      },
-      {
-        title: 'Traditional Sweets & Bobbatlu',
-        description: 'Hot Bobbatlu (Puran Poli) dripping with homemade ghee, Boondi laddoos, and spicy Murukku savories.',
-        category: 'food'
-      },
-      {
-        title: 'Poola Varsham (Flower Shower)',
-        description: 'Cousins showering baskets of yellow marigold and pink rose petals over the bride during harathi.',
-        category: 'fun'
-      },
-      {
-        title: 'Mangala Harathi Blessings',
-        description: 'Lighting camphor on brass plates to ward off all negative energies and bless the bride with lifelong grace.',
-        category: 'emotion'
-      }
-    ],
-    familyQuotes: [
-      {
-        speaker: 'Peddamma (Eldest Aunt)',
-        relation: 'Maternal Aunt',
-        avatar: '🧕🏽',
-        quote: 'As we pounded the turmeric roots today, I remembered Swetha as a little toddler. Today she looks like Goddess Lakshmi herself covered in sacred gold.'
-      },
-      {
-        speaker: 'Kavya (Best Friend)',
-        relation: 'Maid of Honor',
-        avatar: '👧🏽',
-        quote: 'We made sure not a single inch of her face was left without turmeric! Venketesh is going to be completely spellbound!'
-      }
-    ],
-    gallery: [
-      {
-        id: 'pas-1',
-        url: 'https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?auto=format&fit=crop&w=800&q=80',
-        caption: 'The Sacred Golden Turmeric (Pasupu) & Marigold Petals',
-        tag: 'Haldi Ceremony'
-      },
-      {
-        id: 'pas-2',
-        url: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80',
-        caption: 'Traditional Brass Uruli with floating yellow blossoms',
-        tag: 'Decor'
-      }
-    ]
-  },
-
-  // 4. Groom First Visit & Beach Date: 21.10.2026
+  // 3. Groom First Visit & Beach Date: 21.10.2026
   {
     id: 'beach-visit',
     key: 'beach-visit',
@@ -269,6 +182,7 @@ export const milestoneEvents: MilestoneEvent[] = [
     date: '2026-10-21',
     displayDateBadge: '21.10.2026',
     formattedDate: 'October 21, 2026 (Wednesday)',
+    isUpcoming: false,
     location: "Bride's House followed by the Golden Coast Beach",
     locationDetails: 'Breezy shoreline, crashing ocean waves, roasted bhutta stalls & golden sunset glow',
     coverImage: 'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=1200&q=80',
@@ -325,7 +239,95 @@ export const milestoneEvents: MilestoneEvent[] = [
     ]
   },
 
-  // 5. Pandiri Rata: 08.02.2027
+  // 4. Pasupu Function: 13.12.2026 (yet to happen)
+  {
+    id: 'pasupu',
+    key: 'pasupu',
+    title: 'The Sacred Pasupu Function (Haldi & Nalugu)',
+    hindiTitle: 'పసుపు వేడుక (हल्दी एवं नलगु समारोह)',
+    subTitle: 'Grinding Sacred Turmeric Roots, Golden Radiance & Joyful Songs',
+    date: '2026-12-13',
+    displayDateBadge: '13.12.2026',
+    formattedDate: 'December 13, 2026 (Sunday)',
+    isUpcoming: true,
+    location: "Courtyard of Bride's Ancestral Home",
+    locationDetails: 'Decorated with Sunburst Marigolds, Brass Urulis with Floating Petals & Stone Mortars',
+    coverImage: 'https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?auto=format&fit=crop&w=1200&q=80',
+    themeColor: '#EAB308', // Radiant Turmeric Yellow
+    accentBg: 'from-yellow-50 to-amber-100',
+    audioMood: 'festive',
+    culturalContext:
+      'The Pasupu ceremony (Pasupu Kottadam / Danchadam / Nalugu) is one of the most auspicious and vibrant pre-wedding traditions. Married women (Muthaidhavulu) gather to grind whole organic turmeric roots into fragrant golden paste using traditional stone mortars (Rolu-Roddalu) while singing melodious wedding folk songs. The cooling paste is then lovingly applied to the bride and groom to sanctify, protect, and impart a bridal glow.',
+    narrative: {
+      lead: 'A courtyard soon to be bathed in sunburst yellow, fragrant fresh turmeric paste, and joyful laughter as family gathers to shower blessings.',
+      paragraphs: [
+        'On December 13, 2026 (yet to happen), the family courtyard will be transformed into a sea of yellow silk sarees and kurtas. The rhythmic sound of pestle beats on the stone mortar will echo through the morning air as the aunts sing traditional Telugu mangala harathis.',
+        'Swetha will sit gracefully on a wooden peeta, surrounded by brass diyas and baskets piled high with raw golden turmeric rhizomes. Her grandmother will initiate the ritual by applying the fragrant paste on her feet, palms, and cheeks with a betel leaf.',
+        'Within minutes, the solemn blessing is sure to turn into playful celebrations—cousins smearing haldi, splashing scented rose water, and teasing Swetha about how Venketesh will react when he sees her golden radiance.',
+        'The ceremony will conclude with the Mangala Snanam (sacred purification bath) infused with jasmine blossoms, leaving Swetha beaming with bridal joy as the countdown to February begins.'
+      ],
+      behindTheScenes:
+        'Swetha\'s little cousins are already planning to sneak up with yellow water guns filled with turmeric rose-water, ready to turn the backyard into a joyful Haldi celebration!'
+    },
+    highlights: [
+      'Pounding of raw whole turmeric roots in decorated stone mortars (Pasupu Danchadam)',
+      'Application of cooling Nalugu herbal paste and yellow turmeric on feet and cheeks',
+      'Singing of ancestral wedding folk songs and offering Mangala Harathi',
+      'The sacred floral shower (Poola Varsham) and distribution of yellow shagun sarees'
+    ],
+    ritualsAndHospitality: [
+      {
+        title: 'Pasupu Danchadam (Turmeric Pounding)',
+        description: 'Five married women pestle turmeric roots together symbolizing teamwork, health, and mutual prosperity.',
+        category: 'ritual'
+      },
+      {
+        title: 'Traditional Sweets & Bobbatlu',
+        description: 'Hot Bobbatlu (Puran Poli) dripping with homemade ghee, Boondi laddoos, and spicy Murukku savories.',
+        category: 'food'
+      },
+      {
+        title: 'Poola Varsham (Flower Shower)',
+        description: 'Cousins showering baskets of yellow marigold and pink rose petals over the bride during harathi.',
+        category: 'fun'
+      },
+      {
+        title: 'Mangala Harathi Blessings',
+        description: 'Lighting camphor on brass plates to ward off all negative energies and bless the bride with lifelong grace.',
+        category: 'emotion'
+      }
+    ],
+    familyQuotes: [
+      {
+        speaker: 'Peddamma (Eldest Aunt)',
+        relation: 'Maternal Aunt',
+        avatar: '🧕🏽',
+        quote: 'When we pound the turmeric roots on December 13th, we will remember Swetha as a little toddler—ready to shine like Goddess Lakshmi in sacred gold.'
+      },
+      {
+        speaker: 'Kavya (Best Friend)',
+        relation: 'Maid of Honor',
+        avatar: '👧🏽',
+        quote: 'We are going to make sure not a single inch of her face is left without turmeric! Venketesh is going to be completely spellbound!'
+      }
+    ],
+    gallery: [
+      {
+        id: 'pas-1',
+        url: 'https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?auto=format&fit=crop&w=800&q=80',
+        caption: 'The Sacred Golden Turmeric (Pasupu) & Marigold Petals',
+        tag: 'Haldi Ceremony'
+      },
+      {
+        id: 'pas-2',
+        url: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80',
+        caption: 'Traditional Brass Uruli with floating yellow blossoms',
+        tag: 'Decor'
+      }
+    ]
+  },
+
+  // 5. Pandiri Rata: 08.02.2027 (yet to happen)
   {
     id: 'pandiri-rata',
     key: 'pandiri-rata',
@@ -335,6 +337,7 @@ export const milestoneEvents: MilestoneEvent[] = [
     date: '2027-02-08',
     displayDateBadge: '08.02.2027',
     formattedDate: 'February 8, 2027 (Monday)',
+    isUpcoming: true,
     location: "Entrance of Bride & Groom's Family Residences",
     locationDetails: 'Decorated Bamboo Post with Mango Leaves, Coconut, Turmeric & Red Silk Thread',
     coverImage: 'https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=1200&q=80',
@@ -344,21 +347,21 @@ export const milestoneEvents: MilestoneEvent[] = [
     culturalContext:
       'Pandiri Rata (Pandillu Veyadam / Mandap Sthapana) is the sacred foundation ritual that formally announces the commencement of wedding festivities. A sturdy bamboo pole (Rata), anointed with turmeric, kumkum, and wrapped with mango leaves (toranam) and coconut, is planted by five married women (Sumangalis) to invoke Lord Ganesha and ancestral deities to safeguard the wedding from any obstacles.',
     narrative: {
-      lead: 'With the planting of the sacred bamboo pole and the tying of green mango festoons, the wedding house officially awoke to celebrations.',
+      lead: 'With the planting of the sacred bamboo pole and the tying of green mango festoons, the wedding house will officially awake to celebrations.',
       paragraphs: [
-        'Two days before the grand wedding, on the morning of February 8, 2027, the pandit ji sounded the conch at dawn. The auspicious "Pandiri Rata" ceremony commenced to erect the holy wedding canopy.',
-        'Five respected elder women from the family anointed the freshly cut bamboo pole with fragrant turmeric water, vermillion stripes, and tied a sacred yellow thread around its crown along with a green coconut.',
-        'As the family chanted Vedic shlokas, the brothers and uncles hoisted the pole into the ground at the northeast corner of the house. Sweets were distributed to neighbors, declaring to the entire community that the marriage celebrations had officially begun.',
-        'The home was now alive with non-stop nadaswaram melodies, relatives pouring in with luggage from trains and flights, and the aroma of filter coffee brewing in large brass vessels.'
+        'Two days before the grand wedding, on the morning of February 8, 2027 (yet to happen), the pandit ji will sound the conch at dawn as the auspicious "Pandiri Rata" ceremony commences.',
+        'Five respected elder women from the family will anoint the freshly cut bamboo pole with fragrant turmeric water, vermillion stripes, and tie a sacred yellow thread around its crown along with a green coconut.',
+        'As the family chants Vedic shlokas, the brothers and uncles will hoist the pole into the ground at the northeast corner of the house, distributing sweets to neighbors to declare that the marriage festivities have begun.',
+        'The home will come alive with non-stop nadaswaram melodies, relatives arriving from near and far, and the aroma of filter coffee brewing in brass vessels.'
       ],
       behindTheScenes:
-        'Swetha\'s uncle insisted on hoisting the pole personally, chanting slogans so loud that the whole street cheered and came over for morning laddoos!'
+        'Swetha\'s uncle is already preparing to hoist the pole personally and distribute morning laddoos to the entire street!'
     },
     highlights: [
       'Consecration of the sacred bamboo pole with turmeric, kumkum, and sacred yellow thread',
       'Tying of mango leaf festoons (Mavidakula Thoranam) to welcome divine energies',
       'Ganesha Pooja and coconut breaking to ensure an obstacle-free wedding',
-      'Arrival of extended relatives from across the globe, filling the house with festive commotion'
+      'Arrival of extended relatives, filling the house with festive commotion'
     ],
     ritualsAndHospitality: [
       {
@@ -382,7 +385,7 @@ export const milestoneEvents: MilestoneEvent[] = [
         speaker: 'Thatha Ji (Grandfather)',
         relation: 'Patriarch',
         avatar: '👴🏽',
-        quote: 'Once the Pandiri Rata is planted, the wedding devatas reside in our home. Look at the joy in every corner!'
+        quote: 'Once the Pandiri Rata is planted, the wedding devatas reside in our home, filling every corner with auspicious joy!'
       }
     ],
     gallery: [
@@ -395,7 +398,7 @@ export const milestoneEvents: MilestoneEvent[] = [
     ]
   },
 
-  // 6. The Grand Marriage: 10.02.2027
+  // 6. The Grand Marriage: 10.02.2027 (yet to happen)
   {
     id: 'marriage',
     key: 'marriage',
@@ -405,6 +408,7 @@ export const milestoneEvents: MilestoneEvent[] = [
     date: '2027-02-10',
     displayDateBadge: '10.02.2027',
     formattedDate: 'February 10, 2027 (Wednesday)',
+    isUpcoming: true,
     location: 'Sri Venkateswara Kalyana Mandapam Grand Hall',
     locationDetails: 'Grand Lotus Mandap, Fragrant Tuberose Chandeliers, Sacred Fire & Live Nadaswaram',
     coverImage: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80',
@@ -414,15 +418,15 @@ export const milestoneEvents: MilestoneEvent[] = [
     culturalContext:
       'The sacred wedding (Kalyana Muhurtham / Lagna) is the eternal union of two souls. Key rituals include: Jeelakarra Bellam (placing cumin and jaggery on each other\'s heads at the exact auspicious moment, symbolizing that couple remains inseparable through sweet and bitter), Kanyadanam, Mangalasutra Dharana (tying the three sacred golden knots), Saptapadi (seven circumambulations around the holy fire), and Talambralu (joyfully pouring turmeric rice and pearls over each other).',
     narrative: {
-      lead: 'Nine months after that nervous cup of tea on May 6th, Venketesh and Swetha became husband and wife under the blessings of fire and gods.',
+      lead: 'Nine months after that nervous cup of tea on May 6th, Venketesh and Swetha will unite as husband and wife under the blessings of sacred fire and family.',
       paragraphs: [
-        'At the auspicious pre-dawn muhurtham on February 10, 2027, the grand hall reverberated with the resonant notes of the Shehnai and Nadaswaram. Venketesh sat on the mandap in silk dhoti and angavastram, eagerly watching the entrance.',
-        'When the curtain (Aggi / Thera) was held between them, Swetha was carried in by her maternal uncles in a royal yellow and crimson Kanjeevaram silk saree with intricate temple gold borders.',
-        'At the precise stroke of the muhurtham, the curtain dropped. Venketesh and Swetha placed the sacred Jeelakarra Bellam (cumin & jaggery) paste firmly on each other\'s heads, locking eyes in profound emotion. Next came the defining moment: Venketesh tied the three knots of the golden Mangalsutra around Swetha\'s neck as hundreds of family members showered sacred yellow Akshatalu over them.',
-        'And then came everyone\'s favorite ritual: Talambralu! What started as a gentle shower of turmeric-tinted rice quickly turned into a delightful, competitive laughter match, with Venketesh and Swetha playfully dumping bowls of pearls and flowers over each other\'s crowns to the roars and applause of the audience!'
+        'At the auspicious muhurtham on February 10, 2027 (yet to happen), the grand hall will reverberate with the resonant notes of Shehnai and Nadaswaram as Venketesh awaits Swetha at the mandap.',
+        'With the sacred curtain held between them, Swetha will make her royal bridal entrance in a Kanjeevaram silk saree with intricate temple gold borders.',
+        'At the exact stroke of the muhurtham, the curtain will drop: Venketesh and Swetha will place the sacred Jeelakarra Bellam (cumin & jaggery) on each other\'s heads, followed by Venketesh tying the three knots of the golden Mangalsutra as elders shower yellow Akshatalu.',
+        'Then comes everyone\'s favorite moment—Talambralu! Joyful showers of turmeric rice and pearls over each other amidst cheers, laughter, and the seven sacred steps of Saptapadi.'
       ],
       behindTheScenes:
-        'During Talambralu, Swetha\'s brother hoisted her on his shoulders so Venketesh couldn\'t reach her head with the rice bowl! Venketesh\'s friends immediately lifted Venketesh even higher, sparking an unforgettable round of laughter!'
+        'Swetha\'s brothers and Venketesh\'s friends are already strategizing for the playful Talambralu shoulder-lift battle!'
     },
     highlights: [
       'Jeelakarra Bellam: Placing the sacred cumin and jaggery paste on each other at the exact muhurtham',
@@ -457,13 +461,13 @@ export const milestoneEvents: MilestoneEvent[] = [
         speaker: 'Swetha\'s Father',
         relation: 'Father of the Bride',
         avatar: '👨🏽‍🦳',
-        quote: 'Giving away my daughter\'s hand in Kanyadanam was the most emotional second of my life. Seeing Venketesh\'s gentle, reassuring eyes gave me eternal peace.'
+        quote: 'Performing Kanyadanam on February 10th will be the proudest, most emotional moment of my life—knowing Swetha is stepping into a loving home with Venketesh.'
       },
       {
         speaker: 'Venketesh (The Groom)',
         relation: 'The Groom',
         avatar: '🤵🏽',
-        quote: 'When that screen dropped at the muhurtham and I saw Swetha smiling, every bit of nervousness evaporated. I am the luckiest man alive.'
+        quote: 'Waiting eagerly for the muhurtham screen to drop on February 10th and begin our forever journey together.'
       }
     ],
     gallery: [
@@ -482,7 +486,7 @@ export const milestoneEvents: MilestoneEvent[] = [
     ]
   },
 
-  // 7. Reception: 14.02.2027
+  // 7. Reception: 14.02.2027 (yet to happen)
   {
     id: 'reception',
     key: 'reception',
@@ -492,6 +496,7 @@ export const milestoneEvents: MilestoneEvent[] = [
     date: '2027-02-14',
     displayDateBadge: '14.02.2027',
     formattedDate: 'February 14, 2027 (Sunday • Valentine\'s Day)',
+    isUpcoming: true,
     location: 'The Imperial Crystal Ballroom & Lawns',
     locationDetails: 'Grand Chandelier Stage, Red Carpet Runway, Live Violin Symphony & Royal Buffet',
     coverImage: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=80',
@@ -499,17 +504,17 @@ export const milestoneEvents: MilestoneEvent[] = [
     accentBg: 'from-indigo-50 to-purple-100',
     audioMood: 'reception',
     culturalContext:
-      'Scheduled on Valentine\'s Day (February 14, 2027), the wedding reception is the grand modern social celebration where the newly married couple is presented to society, colleagues, and extended friends. Dressed in contemporary black-tie and designer evening wear, the couple cuts a three-tier wedding cake, takes photos on the stage, and dances the evening away.',
+      'Scheduled on Valentine\'s Day (February 14, 2027), the wedding reception is the grand modern social celebration where the newly married couple is presented to society, colleagues, and extended friends. Dressed in contemporary black-tie and designer evening wear, the couple cuts a wedding cake, takes photos on stage, and celebrates with guests.',
     narrative: {
-      lead: 'On a romantic Valentine’s evening, the couple made their first grand social entrance as Mr. & Mrs. amidst glittering lights and champagne toasts.',
+      lead: 'On a romantic Valentine’s evening, the newlyweds will make their first grand social entrance amidst glittering lights, music, and warm toasts.',
       paragraphs: [
-        'On Sunday evening, February 14, 2027, the doors of the Crystal Ballroom opened to welcome over a thousand guests. The atmosphere was sparkling: fairy lights draped from ancient banyan trees, live violinists playing soulful harmonies, and a red carpet leading to the regal couple stage.',
-        'Venketesh looked sharp and debonair in a custom midnight-blue velvet tuxedo, while Swetha stunned in an emerald green and gold designer evening gown with diamond chandelier earrings.',
-        'They walked down the ramp holding hands, radiating the relaxed confidence of two best friends who were now married. Together, they cut an exquisite 3-tier red velvet wedding cake to a standing ovation and sparkling cold pyrotechnics.',
-        'The evening flowed seamlessly into congratulations, endless group selfies with friends from school and university, heartfelt toasts by both best men, and a lavish global banquet with live pasta, chaat, and dessert stations.'
+        'On Sunday evening, February 14, 2027 (yet to happen), the doors of the Crystal Ballroom will open to welcome friends, colleagues, and extended family under twinkling fairy lights and a live violin symphony.',
+        'Venketesh in a tailored tuxedo and Swetha in a radiant evening ensemble will walk the red carpet hand in hand to greet everyone.',
+        'Together, they will cut a celebratory multi-tier wedding cake surrounded by sparkling fountains, heartfelt speeches from siblings and friends, and endless group photos.',
+        'The evening will culminate in a grand banquet feast, celebrating a beautiful journey that started on May 6, 2026.'
       ],
       behindTheScenes:
-        'Venketesh secretly arranged for the live band to play the retro song they had bonded over during their very first balcony meeting on May 6th, surprising Swetha and making her tear up on stage!'
+        'Venketesh is secretly planning a special musical dedication on stage honoring their very first balcony conversation from May 6th!'
     },
     highlights: [
       'Valentine\'s Day romantic gala theme with red carpet and live violin orchestra',
@@ -525,12 +530,12 @@ export const milestoneEvents: MilestoneEvent[] = [
       },
       {
         title: 'International Royal Buffet',
-        description: 'Featuring Awadhi Dum Biryani, Mediterranean Mezze, Artisanal Pastas, Chaat Bazaar, and 12 varieties of ice cream.',
+        description: 'Featuring Awadhi Dum Biryani, Mediterranean Mezze, Artisanal Pastas, Chaat Bazaar, and gourmet desserts.',
         category: 'food'
       },
       {
-        title: 'The Retro Song Surprise',
-        description: 'Venketesh took the microphone and dedicated their May 6th balcony song to Swetha in front of all 1,000 guests.',
+        title: 'The Retro Song Dedication',
+        description: 'A heartfelt musical tribute planned on stage celebrating their May 6th first meeting.',
         category: 'emotion'
       }
     ],
@@ -539,7 +544,7 @@ export const milestoneEvents: MilestoneEvent[] = [
         speaker: 'Neha & Sahil',
         relation: 'The Best Friends Clan',
         avatar: '👫🏽',
-        quote: 'Watching them together on stage on Valentine\'s Day was like seeing a movie unfold! Best arranged-turned-love marriage story ever!'
+        quote: 'Counting down to Valentine\'s Day 2027 to celebrate our favorite couple on stage! Best arranged-turned-love marriage story ever!'
       }
     ],
     gallery: [
@@ -597,7 +602,7 @@ export const defaultBlessings: Blessing[] = [
     id: 'b-1',
     author: 'Uncle & Aunty Mehta',
     relation: 'Family Friends',
-    message: 'From the first meet on May 6th, through the glowing Pasupu and beach date, all the way to your Feb 2027 wedding and Valentine reception, you two are made for each other! Sada Sukhi Raho! 🪷',
+    message: 'From the first meet on May 6th and your Oct 21st beach date, to the upcoming Dec 13th Pasupu, Feb 2027 wedding and Valentine reception, you two are made for each other! Sada Sukhi Raho! 🪷',
     timestamp: '2 hours ago',
     symbol: '🪷'
   },
