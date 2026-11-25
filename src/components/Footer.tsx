@@ -47,7 +47,7 @@ export const Footer: React.FC<FooterProps> = ({ profile }) => {
           </span>
           <span className="text-amber-500">→</span>
           <span className="px-3 py-1 rounded-full bg-white/10 border border-sky-400/40 text-sky-200">
-            21.10.2026 • Beach Date
+            21.10.2026 • Movie (11–2), Lunch & Beach
           </span>
           <span className="text-amber-500">→</span>
           <span className="px-3 py-1 rounded-full bg-white/10 border border-yellow-400/40 text-yellow-200">

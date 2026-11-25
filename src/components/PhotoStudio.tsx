@@ -88,9 +88,9 @@ export const PhotoStudio: React.FC<PhotoStudioProps> = ({
     },
     {
       field: 'beachPhoto',
-      label: '3. Beach Date',
+      label: '3. Movie, Lunch & Beach',
       date: '21.10.2026',
-      sub: 'Damad ji visit & sunset waves',
+      sub: '11AM–2PM movie, lunch & beach',
       color: 'border-sky-300 bg-sky-50/50 text-sky-900'
     },
     {

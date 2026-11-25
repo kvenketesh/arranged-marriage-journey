@@ -335,7 +335,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({
                               onClick={onOpenBeachSim}
                               className="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-gradient-to-r from-sky-600 to-cyan-700 text-white text-xs font-bold shadow hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2"
                             >
-                              <span>🌊 Enter 21 Oct Sunset Beach Simulator</span>
+                              <span>🎬🌊 Explore 21 Oct Movie, Lunch & Beach</span>
                             </button>
                           )}
                           {event.id === 'marriage' && (

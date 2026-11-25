@@ -172,53 +172,63 @@ export const milestoneEvents: MilestoneEvent[] = [
     ]
   },
 
-  // 3. Groom First Visit & Beach Date: 21.10.2026
+  // 3. Groom First Visit, Movie Date, Lunch & Beach Date: 21.10.2026
   {
     id: 'beach-visit',
     key: 'beach-visit',
-    title: 'Groom\'s First House Visit & The Sunset Beach Date',
-    hindiTitle: 'दमाद जी का पहला गृह-आगमन एवं सागर तट (బీచ్ సందర్శన)',
-    subTitle: 'From Son-in-Law Royal Feast to Barefoot Romantic Sunset Waves',
+    title: "Groom's First Visit: Movie Date, Lunch & Sunset Beach",
+    hindiTitle: 'दमाद जी का गृह-आगमन: सिनेमा, प्रीतिभोज एवं सागर तट (మూవీ, లంచ్ & బీచ్)',
+    subTitle: '11:00 AM–2:00 PM Movie Date, Royal Homemade Lunch & Barefoot Sunset Waves',
     date: '2026-10-21',
     displayDateBadge: '21.10.2026',
-    formattedDate: 'October 21, 2026 (Wednesday)',
+    formattedDate: 'October 21, 2026 (Wednesday • 11:00 AM Onwards)',
     isUpcoming: false,
-    location: "Bride's House followed by the Golden Coast Beach",
-    locationDetails: 'Breezy shoreline, crashing ocean waves, roasted bhutta stalls & golden sunset glow',
+    location: "Cinema Hall, Bride's House & Golden Coast Beach",
+    locationDetails: '11:00 AM–2:00 PM Movie Date, Royal Lunch at Home & Breezy Sunset Shoreline',
     coverImage: 'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=1200&q=80',
     themeColor: '#0284C7',
     accentBg: 'from-sky-50 to-cyan-100',
     audioMood: 'ocean',
     culturalContext:
-      'In Indian culture, the groom\'s first solo visit to the bride\'s house as the "Officially Engaged Son-in-law (Damad Ji / Alludu)" is a hilarious and heartwarming royal affair. The mother-in-law cooks a 10-course feast, while the cousins prepare mischievous pranks. But the real magic happens when the couple sneaks away for an intimate outdoor date.',
+      'In Indian culture, the groom\'s first solo outing and visit to the bride\'s house as the "Officially Engaged Son-in-law (Damad Ji / Alludu)" is a hilarious and heartwarming affair. They kicked off the day with an exciting 11:00 AM–2:00 PM movie date, followed by a 10-course homemade royal lunch prepared by the mother-in-law, before heading out to watch the sunset on the beach.',
     narrative: {
-      lead: 'After being pampered like an emperor at her home, Venketesh and Swetha escaped to the beach to create their most cherished memory.',
+      lead: 'A complete dream day: sharing popcorn during an 11 AM–2 PM movie date, savoring a royal homemade lunch, and ending barefoot on the sunset beach.',
       paragraphs: [
-        'On the morning of October 21, 2026, Venketesh arrived at Swetha\'s house. This time, there was no awkward tension—he was welcomed with a garland, traditional Aarti, and an irresistible feast of home-cooked delicacies personally prepared by Swetha\'s mother.',
-        'Every cousin took turns testing the new "Jiju", asking tricky questions and trying to win shagun points. But Swetha and Venketesh kept exchanging playful smiles across the dining table, waiting for their planned afternoon escape.',
-        'By 4:30 PM, they managed to slip out into the pleasant October breeze and headed straight for the coastline. As they stepped onto the damp golden sand, they took off their footwear and felt the cool ocean water lap gently over their feet.',
-        'They walked miles along the shoreline, hand in hand. They shared spicy roasted corn (bhutta) rubbed with lime and salt, chased incoming waves like carefree children, and sat together on a wooden pier as the orange sun dipped into the roaring ocean.',
-        'In that tranquil sea breeze, with salt in their hair and waves whispering at their feet, Venketesh took Swetha\'s hand and said: "From that nervous living room tea in May to this endless sea today, I didn\'t just find a bride—I found my best friend."'
+        'October 21, 2026 began with a joyful morning arrival at Swetha\'s house, where Venketesh was warmly welcomed as the newly engaged son-in-law. Before the afternoon festivities, the two slipped out for their very first 11:00 AM to 2:00 PM movie date together—sharing caramel popcorn, whispering jokes in the dark theater, and soaking in the thrill of a real date without thirty pairs of eyes watching.',
+        'Right after the movie wrapped up at 2:00 PM, they returned home for an irresistible royal lunch feast personally cooked by Swetha\'s mother. Every cousin took turns testing the new "Jiju" across the dining table, asking playful questions while trying to win shagun points.',
+        'By 4:30 PM, thoroughly pampered and full from the lavish lunch, they drove out into the pleasant October breeze straight for the coastline. Stepping onto the damp golden sand, they kicked off their footwear and let the cool ocean waves wash gently over their feet.',
+        'They walked miles along the shoreline hand in hand, shared spicy roasted corn (bhutta) rubbed with lime and salt, chased incoming tides like carefree children, and sat together watching the orange sun dip into the ocean.',
+        'In that tranquil sea breeze, with salt in their hair and waves whispering at their feet, Venketesh took Swetha\'s hand and said: "From that nervous living room tea in May, to our movie and lunch today, and this endless sea—I didn\'t just find a bride, I found my best friend."'
       ],
       behindTheScenes:
-        'A rogue sea wave unexpectedly caught them while taking a selfie, soaking their jeans completely! Instead of getting annoyed, they burst out laughing and splashed water on each other!'
+        'During the 11 AM–2 PM movie, they were so busy chatting and stealing smiles that they barely noticed half the interval! Later at the beach, a rogue wave caught them mid-selfie and soaked their jeans in laughter!'
     },
     highlights: [
-      'The "Damad Ji VIP Reception" with 12 handcrafted family dishes',
-      'Sneaking out together for their first long beach road trip',
-      'Walking barefoot along the shoreline and writing their initials in the wet sand',
-      'Sunset reflections, roasted bhutta with fresh lime, and deep conversations by the waves'
+      '11:00 AM – 2:00 PM Movie Date: Caramel popcorn, theater laughs & first solo outing',
+      '2:00 PM Royal "Damad Ji" Homemade Lunch with 12 handcrafted family dishes',
+      'Afternoon coastal drive and walking barefoot along the golden shoreline',
+      'Carving initials in wet sand, roasted bhutta with lime, and sunset ocean talks'
     ],
     ritualsAndHospitality: [
       {
-        title: 'The Royal Son-in-Law Thali',
-        description: 'Pooris, Paneer Makhani, fragrant Pulao, Gulab Jamuns, and special sweet curd fed with pure motherly affection.',
+        title: '11:00 AM – 2:00 PM Movie Date',
+        description: 'Matinee cinema show together with caramel popcorn, samosas, and whispered laughter away from the wedding buzz.',
+        category: 'fun'
+      },
+      {
+        title: '2:00 PM Royal Son-in-Law Lunch',
+        description: 'Homemade Pooris, Paneer Makhani, fragrant Pulao, Gulab Jamuns, and sweet curd served with pure motherly love.',
         category: 'food'
       },
       {
-        title: 'Writing Names on the Sand',
-        description: 'Carving initials on the shoreline and watching the gentle sea tide seal their memory.',
+        title: 'Sunset Walk & Names on the Sand',
+        description: 'Walking barefoot at 4:30 PM, carving initials on the shoreline, and watching the gentle tide seal their memory.',
         category: 'emotion'
+      },
+      {
+        title: 'Coastal Bhutta & Ocean Breeze',
+        description: 'Sharing spicy coal-roasted corn rubbed with lemon while watching the orange sun sink into the sea.',
+        category: 'fun'
       }
     ],
     familyQuotes: [
@@ -661,8 +671,8 @@ export const arrangeMarriageQuiz: StoryChoice[] = [
   },
   {
     id: 3,
-    question: 'The October 21 Beach Date: How did they celebrate their ocean escape?',
-    context: 'After the heavy 10-course lunch at the bride\'s house...',
+    question: 'The October 21 Outing: How did they wrap up after their 11 AM–2 PM movie & lunch?',
+    context: 'After enjoying the matinee movie date (11 AM–2 PM) followed by a heavy royal lunch at the bride\'s house...',
     options: [
       {
         text: 'Kicked off shoes, chased waves, and ate piping hot spicy bhutta on the sand',

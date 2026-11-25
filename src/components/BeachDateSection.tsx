@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Sunset, Moon, Sun, Waves, Sparkles, Heart, Coffee, Utensils, MessageCircle, Music, Volume2, VolumeX } from 'lucide-react';
+import { Sunset, Moon, Sun, Waves, Sparkles, Heart, Coffee, Utensils, MessageCircle, Music, Volume2, VolumeX, Film } from 'lucide-react';
 import { CoupleProfile } from '../types';
 import { sound } from '../utils/audio';
 import { getGivenName } from '../utils/names';
@@ -17,7 +17,7 @@ export const BeachDateSection: React.FC<BeachDateSectionProps> = ({ profile, onO
   const [sandMessage, setSandMessage] = useState<string>(`${brideFirst} ❤️ ${groomFirst} • 21.10.2026`);
   const [tempMessage, setTempMessage] = useState<string>('');
   const [isWaveWashing, setIsWaveWashing] = useState<boolean>(false);
-  const [activeTab, setActiveTab] = useState<'beach' | 'feast' | 'conversation'>('beach');
+  const [activeTab, setActiveTab] = useState<'movie' | 'feast' | 'beach' | 'conversation'>('beach');
   const [audioState, setAudioState] = useState(sound.getState());
   const isPlayingWaves = audioState.isPlaying && audioState.currentTrack === 'beach-visit';
 
@@ -71,13 +71,13 @@ export const BeachDateSection: React.FC<BeachDateSectionProps> = ({ profile, onO
       <div className="text-center mb-6 sm:mb-8">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sky-100 border border-sky-300 text-[10px] sm:text-xs font-semibold text-sky-900 mb-2 sm:mb-3">
           <Waves className="w-3.5 h-3.5 text-sky-600 shrink-0" />
-          <span>October 21, 2026 • Official Son-in-Law Visit & Beach Date</span>
+          <span>October 21, 2026 • 11 AM–2 PM Movie Date, Lunch & Beach</span>
         </div>
         <h2 className="font-serif-royal text-2xl sm:text-5xl font-bold text-[#8B1E19]">
-          The Sunset Beach Date
+          Movie Date, Lunch & Sunset Beach
         </h2>
         <p className="font-script-romantic text-xl sm:text-3xl text-[#0284C7] mt-0.5 sm:mt-1">
-          "From a formal cup of tea to dancing barefoot with the tide"
+          "11 AM–2 PM cinema laughs, homemade lunch & dancing barefoot with the tide"
         </p>
       </div>
 
@@ -135,11 +135,11 @@ export const BeachDateSection: React.FC<BeachDateSectionProps> = ({ profile, onO
             <span className="text-2xl sm:text-3xl">🌅</span>
           </div>
           <h3 className="font-serif-royal text-xl sm:text-3xl font-bold drop-shadow-md">
-            21.10.2026 • The Coastline Escape
+            21.10.2026 • Movie, Lunch & Beach Escape
           </h3>
           <p className="text-xs sm:text-sm text-white/90 drop-shadow mt-1.5 leading-relaxed">
-            After {groomFirst} was pampered with 10 dishes at {brideFirst}'s house, they drove to the beach.
-            With the sea breeze tangling their hair, all wedding stress faded into laughter.
+            After an unforgettable 11:00 AM–2:00 PM movie date and a delicious royal lunch at {brideFirst}'s home,
+            they drove straight to the beach as the golden sunset began.
           </p>
         </div>
 
@@ -197,14 +197,14 @@ export const BeachDateSection: React.FC<BeachDateSectionProps> = ({ profile, onO
       <div className="mt-6">
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar border-b border-[#D4AF37]/30 pb-3 mb-5">
           <button
-            onClick={() => setActiveTab('beach')}
+            onClick={() => setActiveTab('movie')}
             className={`px-3.5 py-1.5 rounded-full text-xs font-bold whitespace-nowrap shrink-0 transition-all ${
-              activeTab === 'beach'
-                ? 'bg-[#0284C7] text-white shadow-sm'
+              activeTab === 'movie'
+                ? 'bg-purple-700 text-white shadow-sm'
                 : 'bg-white text-[#78350F] border border-amber-200'
             }`}
           >
-            🌊 Barefoot Sands
+            🎬 11AM–2PM Movie
           </button>
           <button
             onClick={() => setActiveTab('feast')}
@@ -214,7 +214,17 @@ export const BeachDateSection: React.FC<BeachDateSectionProps> = ({ profile, onO
                 : 'bg-white text-[#78350F] border border-amber-200'
             }`}
           >
-            🍛 Damad Ji Feast
+            🍛 2PM Royal Lunch
+          </button>
+          <button
+            onClick={() => setActiveTab('beach')}
+            className={`px-3.5 py-1.5 rounded-full text-xs font-bold whitespace-nowrap shrink-0 transition-all ${
+              activeTab === 'beach'
+                ? 'bg-[#0284C7] text-white shadow-sm'
+                : 'bg-white text-[#78350F] border border-amber-200'
+            }`}
+          >
+            🌊 Sunset Beach
           </button>
           <button
             onClick={() => setActiveTab('conversation')}
@@ -227,6 +237,36 @@ export const BeachDateSection: React.FC<BeachDateSectionProps> = ({ profile, onO
             💬 Sunset Talk
           </button>
         </div>
+
+        {/* Tab 0: 11AM-2PM Movie Date */}
+        {activeTab === 'movie' && (
+          <div className="p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-purple-50/70 border border-purple-200 shadow-sm animate-fadeIn">
+            <h4 className="font-serif-royal text-lg sm:text-xl font-bold text-purple-900 mb-1.5 flex items-center gap-1.5">
+              <Film className="w-4 h-4 text-purple-700" />
+              <span>11:00 AM – 2:00 PM Matinee Movie Date</span>
+            </h4>
+            <p className="text-xs sm:text-sm text-[#573926] leading-relaxed mb-3">
+              Their day began at 11:00 AM inside the cinema theater—their very first solo movie outing together before returning home for lunch!
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+              <div className="p-3 bg-white rounded-xl border border-purple-200">
+                <span className="text-xl block mb-1">🍿</span>
+                <strong className="text-purple-950 block">Caramel Popcorn & Interval</strong>
+                <p className="text-[11px] text-[#573926] mt-0.5">Sharing the tub while stealing smiles whenever a romantic scene came on.</p>
+              </div>
+              <div className="p-3 bg-white rounded-xl border border-purple-200">
+                <span className="text-xl block mb-1">🎟️</span>
+                <strong className="text-purple-950 block">First Kept Movie Tickets</strong>
+                <p className="text-[11px] text-[#573926] mt-0.5">{brideFirst} tucked both tickets safely inside her diary as a keepsake.</p>
+              </div>
+              <div className="p-3 bg-white rounded-xl border border-purple-200">
+                <span className="text-xl block mb-1">🚗</span>
+                <strong className="text-purple-950 block">2:00 PM Ride Back for Lunch</strong>
+                <p className="text-[11px] text-[#573926] mt-0.5">Talking non-stop about the climax all the way back to the waiting family lunch!</p>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Tab 1: Barefoot Beach Moments */}
         {activeTab === 'beach' && (
@@ -266,10 +306,10 @@ export const BeachDateSection: React.FC<BeachDateSectionProps> = ({ profile, onO
           <div className="p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-amber-50/70 border border-amber-300 shadow-sm animate-fadeIn">
             <h4 className="font-serif-royal text-lg sm:text-xl font-bold text-[#8B1E19] mb-1.5 flex items-center gap-1.5">
               <Utensils className="w-4 h-4 text-[#D97706]" />
-              <span>10-Course Hospitality at Bride's House (21 Oct Morning)</span>
+              <span>2:00 PM Royal Lunch at Bride's House (Right After the Movie)</span>
             </h4>
             <p className="text-xs sm:text-sm text-[#573926] leading-relaxed mb-3">
-              Before the beach, {groomFirst} received the supreme royal treatment as the newly engaged "Damad Ji".
+              Returning from the 11 AM–2 PM movie, {groomFirst} was treated to a royal homemade lunch as the newly engaged "Damad Ji" before heading out to the beach.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-xs">
               <div className="p-2.5 bg-white rounded-xl border border-amber-200">
